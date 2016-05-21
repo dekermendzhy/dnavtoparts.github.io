@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #dddddd;
+    border: 1px solid grey;
+    width: 532px;
+    height: 575px;
+}
+table {
+    border-collapse: collapse;
+}
+td {
+    border: 8px solid black;
+}

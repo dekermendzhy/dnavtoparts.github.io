@@ -1,0 +1,25 @@
+.content{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 700px;
+    height: 180px;
+    border: 10px solid black;
+    border-radius: 35px;
+    background-color: #E1E3FF;
+}
+
+.timer{
+    margin: 0 auto;
+    margin-top: -40px;
+    height: 98px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 160px;
+}
+
+.milliSec{
+    padding: 72px 54px 15px 0;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    text-align: right;
+}

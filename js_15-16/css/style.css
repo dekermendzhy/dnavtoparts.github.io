@@ -1,0 +1,26 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.wrapper{
+    margin: 10px 30%;
+}
+input[type="text"]{
+   width: 400px;
+   height: 18px;
+   font: 12px, Arial;
+}
+li{
+    margin: 0 10px;
+    list-style-type: none;
+}
+p{
+    color: #19681F;
+}
+a{
+    color: #3000AB;
+    text-decoration: none;
+}
+a:hover{
+    color: #660099;
+}

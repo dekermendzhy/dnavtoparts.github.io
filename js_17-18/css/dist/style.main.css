@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 10px auto;
+    width: 500px;
+    background-color: green;
+}
+h3{
+    text-align: center;
+    color: red;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<script type="text/html" id="item_tmpl">
+    <div class="box">
+        <div class="brd1">
+            <center>
+                <h2><%= name %></h2>
+                <img src="<%= photo %>" alt="">
+            </center>
+                <p><%= work %></p>
+        </div>
+        <div class="line">
+            <div class="brd2">
+                <p><%= sport %></p>
+                    <ul>
+                        <li class="menu_item"><%= sportOne %></li>
+                        <li class="menu_item"><%= sportTwo %></li>
+                        <li class="menu_item"><%= sportThree %></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="line">
+            <div class="brd3">
+                <p><%= myEmail %></p>
+                <p><%= email %></p>
+                <br>
+                <p><%= vk %></p>
+                <p><a target="_blank" href="<%= idVk %>">vk.com</a></p>
+            </div>
+        </div>
+        <div class="line">
+            <div class="brd4">
+                <p><%= feedback %></p>
+                <p><%= answer %></p>
+            </div>
+        </div>
+    </div>
+</script>
+
+
+</body>
+</html>

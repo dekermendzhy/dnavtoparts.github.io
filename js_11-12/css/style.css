@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    background-color: #EEEEEE;
+}
+.box{
+    margin: 0px 30% 0px 30%;
+    padding-left: 40px;
+    box-shadow: 0px 1px 3px 1px rgba(50, 50, 50, 0.75);
+    background-color: white;
+}
+.brd1{
+    padding-top: 4px;
+    margin-top: 4px;
+    padding-bottom: 10px;
+}
+.brd2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+}
+.brd3{
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.brd4{
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.line{
+    border-top: 1px solid;
+    width: 92%;
+}
+.menu_item{
+    padding-top: 15px;
+}
+a{
+    color: grey;
+}

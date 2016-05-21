@@ -1,0 +1,63 @@
+body {
+    background: black;
+    margin: 0;
+    margin-left: 10%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    margin: 0;
+    background: url(../img/background.png);
+    width: 960px;
+    height: 883px;
+}
+
+.logo {
+    margin: 0;
+    padding: 136px 0 0 71px;
+    width: 266px;
+    height: 150px;
+    float: left;
+}
+
+.contacts {
+    margin: 0;
+    padding: 223px 81px 0 0;
+    color: #dcdcdc;
+    line-height: 7px;
+    float: right;
+}
+
+.contact {
+    font: 10.16pt Tahoma;
+}
+
+.phone,
+.email {
+    font: 8.47pt Tahoma;
+}
+
+.contries {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    width: 330px;
+}
+
+a {
+    color: #dcdcdc;
+    font: 14px Tahoma;
+    text-decoration: none;
+}
+
+.footer {
+    margin: 50px 0 0 0;
+    padding: 0;
+    color: #bdbdbd;
+    font: 14px Tahoma;
+    text-align: center;
+}

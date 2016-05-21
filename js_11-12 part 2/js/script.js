@@ -1,0 +1,7 @@
+$(function(){
+
+    $('.carusel').caruselPlugin({
+
+    });
+
+});

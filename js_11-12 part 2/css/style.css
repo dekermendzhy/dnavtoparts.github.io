@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+}
+.wrapper{
+    margin: 20px auto;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border: 8px solid #fff;
+    border-radius: 5px;
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+.carousel-list{
+    width: 10000px;
+    position: relative;
+    list-style: none;
+}
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+.carousel-arrow-left,
+.carousel-arrow-right{
+    position: absolute;
+    top: 200px;
+}
+.carousel-arrow-left{
+    left: -50px;
+}
+.carousel-arrow-right{
+    right: -50px;
+}
