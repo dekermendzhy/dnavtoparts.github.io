@@ -1,0 +1,582 @@
+@media (min-width: 480px) and (max-width: 767px){
+    .wrapper{
+        min-width: 480px;
+        margin: 0 auto;
+    }
+    .header{
+        padding-top: 70px;
+        width: 100%;
+        height: 516px;
+        background: url(../img/bg.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        float: left;
+        overflow: hidden;
+    }
+    .logo{
+        margin: 0 auto;
+        display: block;
+        width: 152px;
+        height: 39px;
+        background: url(../img/logo.png) 0 0 no-repeat;
+    }
+    .header-menu{
+        margin: 0 auto;
+        margin-top: 23px;
+        width: 105px;
+        border-radius: 8px;
+    }
+    .header-home-menu{
+        display: none;
+    }
+    .header-menu:hover > .header-home-menu{
+        display: block;
+    }
+    .header-menu:hover{
+        margin: 0 auto;
+        margin-top: 22px;
+        width: 244px;
+        height: 228px;
+        background-color: rgba(54, 41, 62, 0.9);
+        border: 1px solid #051116;
+        border-radius: 8px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        position: relative;
+        z-index: 2;
+    }
+    .header-home{
+        margin: 0 auto;
+        margin-bottom: 4px;
+        padding: 10px 0 2px 0;
+        display: block;
+        width: 47px;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 24px;
+        line-height: 24px;
+        border-bottom: 2px solid #edbfff;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .header-menu-item{
+        border-top: 1px solid #5f486a;
+        border-bottom: 1px solid #36283e;
+        text-align: center;
+        list-style-type: none;
+    }
+    .header-menu-item:hover{
+        border-top: 1px solid #5f486a;
+        border-bottom: 1px solid #36283e;
+        background: rgba(0,0,0, 0.3);
+        text-align: center;
+        list-style-type: none;
+    }
+    .header-menu-link{
+        padding: 4px 0 7px 0;
+        display: block;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 24px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .header-menu-link:hover{
+        padding: 4px 0 5px 0;
+        display: block;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 24px;
+        border-bottom: 2px solid #edbfff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .header-menu_item-last{
+        border-top: 1px solid #5f486a;
+        text-align: center;
+        list-style-type: none;
+    }
+    .header-menu_item-last:hover{
+        border-top: 1px solid #5f486a;
+        background: rgba(0,0,0, 0.3);
+        border-radius: 0 0 8px 8px;
+        text-align: center;
+        list-style-type: none;
+    }
+    .header-menu-link-last{
+        padding: 4px 0 7px 0;
+        display: block;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 24px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .header-menu-link-last:hover{
+        padding: 4px 0 7px 0;
+        display: block;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 24px;
+        border-bottom: 2px solid #edbfff;
+        border-radius: 0 0 8px 8px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .header-text{
+        margin: 0 auto;
+        width: 100%;
+        position: absolute;
+        top: 196px;
+        left: 0px;
+    }
+    .black-line{
+        margin: 0 auto;
+        height: 246px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .jcarousel-wrapper {
+        margin: 20px auto;
+        position: relative;
+        width: 480px;
+        height: 260px;
+    }
+
+    /** Carousel **/
+
+    .jcarousel {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .jcarousel ul {
+        width: 20000em;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .jcarousel li {
+        float: left;
+        width: 480px;
+        height: 260px;
+    }
+
+    /** Carousel Controls **/
+
+    .jcarousel-control-prev,
+    .jcarousel-control-next {
+        position: absolute;
+        top: 110px;
+    }
+
+    .jcarousel-control-prev {
+        left: 0;
+    }
+
+    .jcarousel-control-next {
+        right: 0;
+    }
+
+    .jcarousel-control-prev:hover span,
+    .jcarousel-control-next:hover span {
+        display: block;
+    }
+    .header-text_block{
+        padding: 93px 0 0 32px;
+        float: left;
+    }
+    .header-text_block2{
+        padding: 93px 0 0 32px;
+        float: left;
+    }
+    .header-text_block3{
+        padding: 93px 0 0 32px;
+        float: left;
+    }
+    .header-text_first{
+        color: #fefefe;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 36px;
+        line-height: 36px;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    }
+    .header-text_second{
+        color: #edbfff;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+        text-transform: uppercase;
+    }
+    .header-text_third{
+        display: none;
+    }
+    .iphone{
+        margin: 0 24px 0 0;
+        float: right;
+    }
+    .iphone4{
+        display: none;
+    }
+    .header-info{
+        position: absolute;
+        top: 548px;
+        width: 100%;
+        border-top: 1px solid #33253a;
+        background: linear-gradient(to top, #322539, #745083);
+    }
+    .header-info_company{
+        padding: 76px 0 0 84px;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        text-shadow: 0.5px 0.9px 0 #0f1518;
+        text-transform: uppercase;
+    }
+    .header-info_company2{
+        padding: 25px 0 0 84px;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        text-shadow: 0.5px 0.9px 0 #0f1518;
+        text-transform: uppercase;
+    }
+    .header-info_company3{
+        padding: 29px 0 0 84px;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        text-shadow: 0.5px 0.9px 0 #0f1518;
+        text-transform: uppercase;
+    }
+    .header-info_text,
+    .header-info_text2{
+        padding: 3px 0 16px 82px;
+        width: 371px;
+        height: 72px;
+        display: block;
+        color: white;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        text-shadow: 0.5px 0.9px 0 #0f1518;
+    }
+    .header-info_text3{
+        padding: 3px 0 15px 82px;
+        width: 371px;
+        height: 72px;
+        display: block;
+        color: white;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        text-shadow: 0.5px 0.9px 0 #0f1518;
+    }
+    .header-info_next{
+        margin: 0 0 0 398px;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 18px;
+        text-decoration: none;
+        text-shadow: 0.5px 0.9px 0 #0f1518;
+        text-transform: uppercase;
+    }
+    .header-info_next:hover{
+        margin: 0 0 0 398px;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 18px;
+        text-decoration: none;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+    }
+    .line-green{
+        padding-top: 65px;
+        border-bottom: 1px solid #1d2f37;
+    }
+    .line-black{
+        height: 1px;
+        border-top: 1px solid #0d151b;
+    }
+    .content{
+        position: absolute;
+        top: 1144px;
+        left: 0px;
+        width: 100%;
+        height: 1px;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: #f9f9f9;
+    }
+    .content-first{
+        margin: 57px 0 21px 0;
+        border: 1px solid transparent;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+    .content-first-photo {
+        padding: 30px 13px 0 20px;
+        float: left;
+    }
+    .content-first_text{
+        padding: 42px 0 0 0;
+        float: left;
+        color: #454545;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 30px;
+        line-height: 24px;
+        text-shadow: 0.5px 0.9px 0 white;
+        text-transform: uppercase;
+        overflow: hidden;
+    }
+    .content-first_text2{
+        padding: 42px 0 0 4px;
+        color: #edbfff;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 30px;
+        line-height: 24px;
+        text-shadow: 0.5px 0.9px 0 white;
+        text-transform: uppercase;
+        overflow: hidden;
+    }
+    .content-first_text3{
+        padding: 18px 0 0 0;
+        width: 355px;
+        height: 178px;
+        color: #454545;
+        font-family: 'Open Sans Condensed', Arial, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        text-shadow: 0.5px 0.9px 0 white;
+        overflow: hidden;
+    }
+    .content-first_text4{
+        display: none;
+    }
+    .lines2{
+        padding: 23px 0 0 11px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .content-second{
+        margin: 46px 0 0 82px;
+    }
+    .content-photo{
+        display: none;
+    }
+    .content-second-photo,
+    .content-second-photo2,
+    .content-second-photo3{
+        padding: 19px 18px 0 0;
+        float: left;
+    }
+    .content-updates{
+        padding: 0 0 0 0;
+        color: #454545;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 30px;
+        line-height: 24px;
+        text-shadow: 0.5px 0.9px 0 white;
+        text-transform: uppercase;
+    }
+    .content-second_text{
+        margin: 20px 0 3px 0;
+        width: 250px;
+        height: 21px;
+        display: block;
+        color: #454545;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        text-shadow: 0.5px 0.9px 0 white;
+        overflow: hidden;
+    }
+    .content-second_text2{
+        width: 260px;
+        height: 23px;
+        display: block;
+        color: #454545;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: left;
+        text-shadow: 0.5px 0.9px 0 white;
+        overflow: hidden;
+    }
+    .block{
+        margin: 0 0 0 0;
+        display: block;
+        overflow: hidden;
+    }
+    .block2{
+        margin: 0 0 0 0;
+        display: block;
+        overflow: hidden;
+    }
+    .block3{
+        margin: 0 0 0 0;
+        display: block;
+        overflow: hidden;
+    }
+    .content-second_next{
+        margin: 29px 0 0 251px;
+        display: block;
+        color: #454545;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+        text-decoration: none;
+        text-shadow: 0.5px 0.9px 0 white;
+        text-transform: uppercase;
+    }
+    .content-second_next2{
+        display: none;
+    }
+    .lines-white{
+        margin: 91px 0 0 0;
+        height: 1px;
+        border-top: 1px solid #e6e6e6;
+        overflow: hidden;
+    }
+    .sponsors{
+        position: absolute;
+        top: 1955px;
+        margin: 37px 0 0 0;
+        text-align: center;
+    }
+    .sponsors1{
+        margin: 0 249px 0 0;
+    }
+    .sponsors2{
+        margin: -67px 0 0 3px;
+    }
+    .sponsors3{
+        margin: -67px 0 0 248px;
+    }
+    .sponsors4{
+        margin: 21px 0 0 -310px;
+    }
+    .sponsors5{
+        margin: -65px 21px 0 0;
+    }
+    .sponsors6{
+        margin: -63px 0 0 255px;
+    }
+    .lines-grey{
+        position: absolute;
+        top: 2165px;
+        left: 0px;
+        width: 100%;
+        border-top: 1px solid #d8d8d8;
+    }
+    .content-footer{
+        position: absolute;
+        top: 2166px;
+        left: 0px;
+        width: 100%;
+        background-color: #ececec;
+    }
+    .content-footer_first{
+        padding: 81px 0 63px 19px;
+    }
+    .content-footer_second{
+        padding: 0 0 65px 19px;
+    }
+    .content-footer_third{
+        padding: 0 0 90px 19px;
+    }
+    .content-footer_cat,
+    .content-footer_cat2,
+    .content-footer_cat3,
+    .content-footer_Cat{
+        display: none;
+    }
+    .content-footer_categories1,
+    .content-footer_categories2,
+    .content-footer_categories3{
+        color: #454545;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 24px;
+        line-height: 24px;
+        text-shadow: 0.5px 0.9px 0 white;
+        text-transform: uppercase;
+    }
+    .content-footer_text1,
+    .content-footer_text2,
+    .content-footer_text3{
+        padding: 8px 0 0 0;
+        width: 441px;
+        height: 91px;
+        color: #787878;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        text-shadow: 0.5px 0.9px 0 white;
+    }
+    .content-footer_text2_1,
+    .content-footer_text2_2{
+        display: none;
+    }
+    .footer{
+        position: absolute;
+        top: 2835px;
+        left: 0px;
+        padding: 43px 0 75px 0;
+        width: 100%;
+        background: url(../img/footer.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    .footer-links{
+        margin: -3px 0 18px 0;
+    }
+    .footer-links li {
+        padding: 0 11px 0 10px;
+        display: inline-block;
+    }
+    .footer-links a {
+        width: 435px;
+        height: 15px;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
+    }
+    .footer-text_first{
+        color: white;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 34px;
+        text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
+    }
+    .footer-text_second{
+        color: white;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 34px;
+        text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
+    }
+}

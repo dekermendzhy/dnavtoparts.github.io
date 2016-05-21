@@ -1,0 +1,640 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", Arial; }
+
+header {
+  margin: 0 auto;
+  width: 1160px; }
+
+.header__logo {
+  margin: 35px 0 35px 4px;
+  float: left;
+  width: 206px;
+  height: 40px;
+  background: url(../img/logo.png); }
+
+.header__socials ul {
+  margin: 47px 0 0 0;
+  float: right; }
+
+.header__socials li {
+  margin-left: 15px;
+  list-style: none;
+  position: relative;
+  display: inline-block; }
+
+.header__socials a {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url(../img/socials.png) 5px 0 no-repeat;
+  transition: 0.4s; }
+
+.header__socials a:hover {
+  background-position: 5px -21px; }
+
+.header__socials .twitter {
+  background-position: -29px 0; }
+
+.header__socials .rss {
+  background-position: -59px 0; }
+
+.header__socials .linkedin {
+  background-position: -92px 0; }
+
+.header__socials .skype {
+  background-position: -126px 0; }
+
+.header__socials .twitter:hover {
+  background-position: -29px -21px; }
+
+.header__socials .rss:hover {
+  background-position: -59px -21px; }
+
+.header__socials .linkedin:hover {
+  background-position: -92px -21px; }
+
+.header__socials .skype:hover {
+  background-position: -126px -21px; }
+
+menu {
+  margin: 0 auto;
+  width: 1160px; }
+
+.main__menu ul {
+  clear: both;
+  width: 1160px;
+  background-color: #2a2d32; }
+
+.main__menu li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 19px 23px;
+  border-right: 1px solid black; }
+
+.main__menu li:first-child {
+  padding: 19px 34px;
+  background-color: #248cec; }
+
+.main__menu li:last-child {
+  padding: 19px 37px; }
+
+.main__menu a {
+  color: white;
+  font-family: "Ubuntu Condensed", "Ubuntu", Arial;
+  text-decoration: none; }
+
+.main__menu a:hover {
+  color: #f4b60d; }
+
+.main__search {
+  position: absolute;
+  top: 119px;
+  left: 963px;
+  padding: 12px 100px 12px 13px;
+  border: 1px solid #181a1d;
+  box-sizing: border-box;
+  background-color: #35383c;
+  color: #626466; }
+
+.img {
+  position: absolute;
+  top: 131px;
+  left: 1175px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: transparent; }
+
+.main__search:focus {
+  outline: none; }
+
+.jcarousel-wrapper {
+  margin: 0 auto;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 1160px;
+  height: 470px; }
+
+.jcarousel {
+  position: relative;
+  overflow: hidden; }
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.jcarousel li {
+  float: left;
+  width: 1160px;
+  height: 470px; }
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  top: 200px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: #4E443C;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 1px #000;
+  font: 24px/27px Arial, sans-serif;
+  -webkit-border-radius: 30px;
+    -webkit-border-radius--moz-border-radius: 30px;
+      -webkit-border-radius--moz-border-radius-border-radius: 30px;
+  -webkit-box-shadow: 0 0 2px #999;
+    -webkit-box-shadow--moz-box-shadow: 0 0 2px #999;
+      -webkit-box-shadow--moz-box-shadow-box-shadow: 0 0 2px #999; }
+
+.jcarousel-control-prev {
+  left: -48px; }
+
+.jcarousel-control-next {
+  right: -48px; }
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+  display: block; }
+
+.main__footer {
+  margin: 0 auto;
+  margin-bottom: 85px;
+  display: flex;
+  width: 1160px;
+  height: 212px; }
+
+.main__footer .number {
+  margin: 10px 0 0 0;
+  width: 100px;
+  height: 100px;
+  color: #e9e9ea;
+  font: 87px "Ubuntu", Arial;
+  overflow: hidden; }
+
+.main__footer .first {
+  margin: 18px 34px 0 22px;
+  display: block;
+  float: left;
+  width: 240px;
+  height: 194px; }
+
+.main__footer .settings {
+  margin: 14px 0 14px 2px;
+  display: block;
+  width: 32px;
+  height: 32px; }
+
+.main__footer .title {
+  margin: 0 0 0 3px;
+  display: block;
+  width: 170px;
+  height: 21px;
+  color: #2a2b2e;
+  font: 20px "Ubuntu", Arial; }
+
+.main__footer .text {
+  margin: 21px 0 0 0;
+  display: block;
+  width: 239px;
+  height: 60px;
+  line-height: 20px;
+  color: #8a8a8a;
+  font-family: Arial, sans-serif;
+  font-size: 13px; }
+
+.main__footer .next {
+  margin: 18px 0 0 0;
+  display: block;
+  width: 86px;
+  height: 15px;
+  text-decoration: none;
+  font: 13px "Ubuntu", Arial;
+  color: #2a2b2e;
+  background: url(../img/arrow.png) 72px 4px no-repeat; }
+
+.main__footer .next:hover {
+  color: #248cec;
+  background-position: 72px -9px; }
+
+.main__footer .second {
+  margin: 29px 36px 0 26px;
+  display: block;
+  float: left;
+  width: 240px;
+  height: 182px; }
+
+.main__footer .params {
+  margin: 3px 0 13px 2px;
+  display: block;
+  width: 32px;
+  height: 32px; }
+
+.main__footer .third {
+  margin: 27px 0 0 24px;
+  display: block;
+  float: left;
+  width: 236px;
+  height: 184px; }
+
+.main__footer .truck {
+  margin: 8px 0 16px 3px;
+  display: block;
+  width: 32px;
+  height: 26px; }
+
+.content__site {
+  margin: 0 auto;
+  height: 500px;
+  display: block;
+  background-color: #2a2d32; }
+
+.content__site .info {
+  margin: 0 0 0 53px;
+  display: block;
+  width: 140px;
+  height: 25px;
+  color: #ffffff;
+  font: 24px "Ubuntu", Arial; }
+
+.content__site .first {
+  margin: 98px 0 0 52px;
+  display: inline-block;
+  width: 260px;
+  height: 260px; }
+
+.content__site .services {
+  margin: 0 0 0 0;
+  display: block;
+  width: 260px;
+  height: 260px; }
+
+.content__site .title {
+  margin: 31px 0 0 60px;
+  display: block;
+  width: 159px;
+  height: 17px;
+  font: 16px "Ubuntu", Arial; }
+
+.content__site .title a {
+  color: #ffffff;
+  text-decoration: none; }
+
+.content__site .title a:hover {
+  color: #f4b60d; }
+
+.content__site .second {
+  margin: 0 36px 0 37px;
+  display: inline-block;
+  width: 260px;
+  height: 260px; }
+
+.content__site .maintence {
+  margin: 0 0 0 0;
+  display: block;
+  width: 260px;
+  height: 260px; }
+
+.content__site .third {
+  margin: 0 35px 0 0;
+  display: inline-block;
+  width: 260px;
+  height: 260px; }
+
+.content__site .tire {
+  margin: 0 0 0 0;
+  display: block;
+  width: 260px;
+  height: 260px; }
+
+.content__site .fourth {
+  margin: 0 0 0 0;
+  display: inline-block;
+  width: 260px;
+  height: 260px; }
+
+.content__site .repair {
+  margin: 0 0 0 0;
+  display: block;
+  width: 260px;
+  height: 260px; }
+
+content {
+  margin: 0 auto;
+  height: 725px;
+  display: block;
+  background-color: #ffffff; }
+
+.content__title {
+  margin: 59px 0 0 53px;
+  display: block;
+  font: 24px "Ubuntu", Arial;
+  color: #2a2d32;
+  float: left;
+  overflow: hidden; }
+
+.content__last {
+  margin: 0 33px 157px 0;
+  display: block;
+  float: left;
+  width: 620px;
+  height: 470px; }
+
+.content__last .news {
+  margin: 48px 0 -17px 34px;
+  display: block;
+  height: 147px;
+  float: left; }
+
+.content__last .photo {
+  margin: -4px 35px 0 0;
+  float: left;
+  display: block;
+  width: 167px;
+  height: 150px; }
+
+.content__last .info {
+  margin: 0 0 0 0;
+  width: 326px;
+  height: 17px;
+  float: left;
+  display: block;
+  font: 16px "Ubuntu", Arial;
+  color: #2a2d32;
+  letter-spacing: 0.2px; }
+
+.content__last .info a {
+  text-decoration: none;
+  color: #2a2d32; }
+
+.content__last .info a:hover {
+  color: #248cec; }
+
+.content__last .comments {
+  margin: 7px 0 0 0;
+  width: 190px;
+  height: 15px;
+  float: left;
+  display: block;
+  font: 13px Arial;
+  letter-spacing: 0.3px; }
+
+.comments__blue {
+  color: #248cec; }
+
+.content__last .text {
+  margin: 24px 0 0 0;
+  width: 378px;
+  height: 77px;
+  float: left;
+  display: block;
+  color: #8a8a8a;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px; }
+
+.content__banners {
+  margin: 58px 0 44px 0;
+  display: block;
+  font: 24px "Ubuntu", Arial;
+  color: #2a2d32;
+  float: left;
+  overflow: hidden; }
+
+.accordion {
+  margin: 0 0 0 0;
+  display: block;
+  width: 559px;
+  height: 325px; }
+
+.accordion span {
+  margin-bottom: 6px;
+  display: block;
+  width: 506px;
+  height: 24px;
+  padding: 12px 0 0 50px;
+  border: 1px solid #e8e8e8;
+  background: url(../img/line.png) right 12px no-repeat;
+  font: 13px "Ubuntu", Arial;
+  text-transform: uppercase; }
+
+.accordion span:hover {
+  color: white;
+  background-color: #f4b60d; }
+
+.accordion span.active {
+  background-position: right -45px; }
+
+.accordion p {
+  margin: 26px 0 39px 38px;
+  display: block;
+  width: 516px;
+  color: #8a8a8a;
+  font: 13px Arial, sans-serif;
+  line-height: 20px; }
+
+.content__sponsor {
+  margin: 0 0 0 0;
+  clear: left;
+  display: block; }
+
+.content__sponsor .rbp {
+  margin: 0 0 0 50px;
+  display: inline-block;
+  width: 143px;
+  height: 62px; }
+
+.content__sponsor .moto {
+  margin: 0 0 0 44px;
+  display: inline-block;
+  width: 143px;
+  height: 62px; }
+
+.content__sponsor .grave {
+  margin: 0 0 0 61px;
+  display: inline-block;
+  width: 184px;
+  height: 64px; }
+
+.content__sponsor .atx {
+  margin: 0 0 0 43px;
+  display: inline-block;
+  width: 143px;
+  height: 62px; }
+
+.content__sponsor .cruseir {
+  margin: 0 0 0 55px;
+  display: inline-block;
+  width: 143px;
+  height: 62px; }
+
+.content__sponsor .gear {
+  margin: 0 0 0 33px;
+  display: inline-block;
+  width: 143px;
+  height: 62px; }
+
+footer {
+  margin: 0 auto;
+  margin-top: 58px;
+  display: block;
+  height: 385px; }
+
+.footer__links {
+  margin: 0 auto;
+  display: block;
+  height: 325px;
+  background-color: #2a2d32; }
+
+.footer__links .socials {
+  margin: 59px 0 0 0;
+  display: block;
+  float: left;
+  width: 300px;
+  height: 190px; }
+
+.footer__links .title {
+  margin: 0 0 0 52px;
+  float: left;
+  display: block;
+  width: 78px;
+  height: 18px;
+  font: 16px "Ubuntu", Arial;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.footer__links .links_1 {
+  margin: 62px 0 0 53px;
+  display: block;
+  width: 120px;
+  height: 16px;
+  color: #828385;
+  font: 13px Arial, sans-serif; }
+
+.footer__links .links_2,
+.footer__links .links_3,
+.footer__links .links_4 {
+  margin: 10px 0 0 53px;
+  display: block;
+  width: 158px;
+  height: 16px;
+  font: 13px Arial, sans-serif; }
+
+.footer__links .links_1 a,
+.footer__links .links_2 a,
+.footer__links .links_3 a,
+.footer__links .links_4 a {
+  color: #828385;
+  text-decoration: none; }
+
+.footer__links .links_1 a:hover,
+.footer__links .links_2 a:hover,
+.footer__links .links_3 a:hover,
+.footer__links .links_4 a:hover {
+  color: #248cec; }
+
+.footer__links .line {
+  margin: 8px 0 0 50px;
+  display: block;
+  width: 261px;
+  height: 1px;
+  border-bottom: 1px solid #393c40; }
+
+.footer__links .link {
+  margin: 59px 0 0 0;
+  display: block;
+  float: left;
+  width: 300px;
+  height: 190px; }
+
+.footer__links .blog {
+  margin: 59px 0 0 0;
+  display: block;
+  float: left;
+  width: 300px;
+  height: 190px; }
+
+.footer__links .about {
+  margin: 59px 0 0 0;
+  display: block;
+  float: left;
+  width: 300px;
+  height: 190px; }
+
+.footer__contacts {
+  margin: 0 auto;
+  display: flex;
+  height: 60px;
+  background-color: #35383c; }
+
+.footer__contacts .addr {
+  margin: 22px 0 0 54px;
+  width: 309px;
+  height: 20px; }
+
+.footer__contacts .loc {
+  margin: 0 0 0 0;
+  width: 12px;
+  height: 16px; }
+
+.footer__contacts .address {
+  margin: 1px 0 0 11px;
+  width: 280px;
+  height: 20px;
+  font: 12px Arial, sans-serif;
+  color: #6f7073;
+  letter-spacing: 0.1px; }
+
+.footer__contacts .phone {
+  margin: 22px 0 0 18px;
+  width: 135px;
+  height: 20px; }
+
+.footer__contacts .iphone {
+  margin: 0 0 0 0;
+  width: 11px;
+  height: 16px; }
+
+.footer__contacts .number {
+  margin: 2px 0 0 7px;
+  width: 100px;
+  height: 20px;
+  font: 12px Arial, sans-serif;
+  color: #6f7073;
+  letter-spacing: 0.1px; }
+
+.footer__contacts .mail {
+  margin: 23px 0 0 23px;
+  height: 20px; }
+
+.footer__contacts .em {
+  margin: 0 0 0 0;
+  width: 16px;
+  height: 12px; }
+
+.footer__contacts .email {
+  margin: 0 0 0 13px;
+  width: 100px;
+  height: 20px;
+  font: 12px Arial, sans-serif;
+  color: #6f7073;
+  letter-spacing: 0.1px; }
+
+.footer__contacts .copy {
+  margin: 22px 0 0 437px;
+  height: 20px; }
+
+.footer__contacts .info {
+  margin: 0 0 0 0;
+  width: 110px;
+  height: 20px;
+  font: 12px Arial, sans-serif;
+  color: #6f7073;
+  letter-spacing: 0.1px; }
