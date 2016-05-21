@@ -268,16 +268,17 @@ menu {
   margin: 98px 0 0 52px;
   display: inline-block;
   width: 260px;
-  height: 260px; }
+  height: 260px;
+  background-image: url(../img/services.png); }
 
-.content__site .services {
-  margin: 0 0 0 0;
-  display: block;
-  width: 260px;
-  height: 260px; }
+.content__site .first:hover,
+.content__site .second:hover,
+.content__site .third:hover,
+.content__site .fourth:hover {
+  background-image: url(../img/blue.png); }
 
 .content__site .title {
-  margin: 31px 0 0 60px;
+  margin: 291px 0 0 60px;
   display: block;
   width: 159px;
   height: 17px;
@@ -294,37 +295,22 @@ menu {
   margin: 0 36px 0 37px;
   display: inline-block;
   width: 260px;
-  height: 260px; }
-
-.content__site .maintence {
-  margin: 0 0 0 0;
-  display: block;
-  width: 260px;
-  height: 260px; }
+  height: 260px;
+  background-image: url(../img/maintence.png); }
 
 .content__site .third {
   margin: 0 35px 0 0;
   display: inline-block;
   width: 260px;
-  height: 260px; }
-
-.content__site .tire {
-  margin: 0 0 0 0;
-  display: block;
-  width: 260px;
-  height: 260px; }
+  height: 260px;
+  background-image: url(../img/tire.png); }
 
 .content__site .fourth {
   margin: 0 0 0 0;
   display: inline-block;
   width: 260px;
-  height: 260px; }
-
-.content__site .repair {
-  margin: 0 0 0 0;
-  display: block;
-  width: 260px;
-  height: 260px; }
+  height: 260px;
+  background-image: url(../img/repair.png); }
 
 content {
   margin: 0 auto;
@@ -586,7 +572,6 @@ footer {
 
 .footer__contacts .address {
   margin: 1px 0 0 11px;
-  width: 280px;
   height: 20px;
   font: 12px Arial, sans-serif;
   color: #6f7073;
@@ -604,7 +589,6 @@ footer {
 
 .footer__contacts .number {
   margin: 2px 0 0 7px;
-  width: 100px;
   height: 20px;
   font: 12px Arial, sans-serif;
   color: #6f7073;
@@ -612,6 +596,7 @@ footer {
 
 .footer__contacts .mail {
   margin: 23px 0 0 23px;
+  width: 100px;
   height: 20px; }
 
 .footer__contacts .em {
@@ -621,7 +606,6 @@ footer {
 
 .footer__contacts .email {
   margin: 0 0 0 13px;
-  width: 100px;
   height: 20px;
   font: 12px Arial, sans-serif;
   color: #6f7073;
