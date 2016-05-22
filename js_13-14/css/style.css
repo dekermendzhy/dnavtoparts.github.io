@@ -59,3 +59,9 @@ input[type="checkbox"]{
 	display: block;
     color: black;
 }
+.button{
+    margin: 100px 0 0 105px;
+    width: 80px;
+    height: 20px;
+    display: block;
+}

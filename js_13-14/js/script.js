@@ -17,13 +17,11 @@ var test = [
     value: ['false', 'true', 'false']
 }];
 
-// -------------- Запись данных в локалсторэдж -------------- //
 
 localStorage.setItem('test', JSON.stringify(test));
 var str = localStorage.getItem('test');
     str = JSON.parse(str);
 
-// -------------- Шаблонизатор -------------- //
 
 $(function() {
     var $html = $('#test').html();
@@ -31,7 +29,6 @@ $(function() {
     $('body').append(tmpl(str));
 });
 
-// -------------- Проверка ответов -------------- //
 
 $(function () {
 
@@ -91,4 +88,9 @@ $(function () {
                 }
             );
         });
+
+        var $button = $('.button');
+            $button.on('click', function(){
+                location.reload();
+            });
 });
