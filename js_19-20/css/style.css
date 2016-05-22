@@ -5,7 +5,9 @@
 
 header {
   margin: 0 auto;
-  width: 1160px; }
+  margin-bottom: 35px;
+  width: 1160px;
+  height: 76px; }
 
 .header__logo {
   margin: 35px 0 35px 4px;
@@ -26,13 +28,13 @@ header {
 
 .header__socials a {
   display: block;
-  height: 20px;
   width: 20px;
-  background: url(../img/socials.png) 5px 0 no-repeat;
+  height: 17px;
+  background: url(../img/socials.jpg) 5px 0 no-repeat;
   transition: 0.4s; }
 
 .header__socials a:hover {
-  background-position: 5px -21px; }
+  background-position: 5px -18px; }
 
 .header__socials .twitter {
   background-position: -29px 0; }
@@ -47,20 +49,21 @@ header {
   background-position: -126px 0; }
 
 .header__socials .twitter:hover {
-  background-position: -29px -21px; }
+  background-position: -29px -18px; }
 
 .header__socials .rss:hover {
-  background-position: -59px -21px; }
+  background-position: -59px -18px; }
 
 .header__socials .linkedin:hover {
-  background-position: -92px -21px; }
+  background-position: -92px -18px; }
 
 .header__socials .skype:hover {
-  background-position: -126px -21px; }
+  background-position: -126px -18px; }
 
 menu {
   margin: 0 auto;
-  width: 1160px; }
+  width: 1160px;
+  height: 55px; }
 
 .main__menu ul {
   clear: both;
@@ -89,24 +92,13 @@ menu {
   color: #f4b60d; }
 
 .main__search {
-  position: absolute;
-  top: 119px;
-  left: 963px;
-  padding: 12px 100px 12px 13px;
+  margin: 0 0 0 418px;
+  padding: 15px 100px 10px 13px;
   border: 1px solid #181a1d;
   box-sizing: border-box;
   background-color: #35383c;
-  color: #626466; }
-
-.img {
-  position: absolute;
-  top: 131px;
-  left: 1175px;
-  display: block;
-  width: 15px;
-  height: 15px;
-  padding: 0;
-  border: transparent; }
+  color: #626466;
+  background: url(../img/search.png) 212px 11px no-repeat; }
 
 .main__search:focus {
   outline: none; }
@@ -612,7 +604,7 @@ footer {
   letter-spacing: 0.1px; }
 
 .footer__contacts .copy {
-  margin: 22px 0 0 437px;
+  margin: 22px 0 0 466px;
   height: 20px; }
 
 .footer__contacts .info {
