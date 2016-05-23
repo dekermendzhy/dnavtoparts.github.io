@@ -39,5 +39,5 @@ gulp.task('css', function () {
       "maxLineLen": 80,
       "uglyComments": true
     }))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('css/dist'));
 });

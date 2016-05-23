@@ -14,7 +14,7 @@ header {
   float: left;
   width: 206px;
   height: 40px;
-  background: url(../img/logo.png); }
+  background: url(../../img/logo.png); }
 
 .header__socials ul {
   margin: 47px 0 0 0;
@@ -30,7 +30,7 @@ header {
   display: block;
   width: 20px;
   height: 17px;
-  background: url(../img/socials.jpg) 5px 0 no-repeat;
+  background: url(../../img/socials.jpg) 5px 0 no-repeat;
   transition: 0.4s; }
 
 .header__socials a:hover {
@@ -98,7 +98,7 @@ menu {
   box-sizing: border-box;
   background-color: #35383c;
   color: #626466;
-  background: url(../img/search.png) 212px 11px no-repeat; }
+  background: url(../../img/search.png) 212px 11px no-repeat; }
 
 .main__search:focus {
   outline: none; }
@@ -210,7 +210,7 @@ menu {
   text-decoration: none;
   font: 13px "Ubuntu", Arial;
   color: #2a2b2e;
-  background: url(../img/arrow.png) 72px 4px no-repeat; }
+  background: url(../../img/arrow.png) 72px 4px no-repeat; }
 
 .main__footer .next:hover {
   color: #248cec;
@@ -261,13 +261,13 @@ menu {
   display: inline-block;
   width: 260px;
   height: 260px;
-  background-image: url(../img/services.png); }
+  background-image: url(../../img/services.png); }
 
 .content__site .first:hover,
 .content__site .second:hover,
 .content__site .third:hover,
 .content__site .fourth:hover {
-  background-image: url(../img/blue.png); }
+  background-image: url(../../img/blue.png); }
 
 .content__site .title {
   margin: 291px 0 0 60px;
@@ -288,21 +288,21 @@ menu {
   display: inline-block;
   width: 260px;
   height: 260px;
-  background-image: url(../img/maintence.png); }
+  background-image: url(../../img/maintence.png); }
 
 .content__site .third {
   margin: 0 35px 0 0;
   display: inline-block;
   width: 260px;
   height: 260px;
-  background-image: url(../img/tire.png); }
+  background-image: url(../../img/tire.png); }
 
 .content__site .fourth {
   margin: 0 0 0 0;
   display: inline-block;
   width: 260px;
   height: 260px;
-  background-image: url(../img/repair.png); }
+  background-image: url(../../img/repair.png); }
 
 content {
   margin: 0 auto;
@@ -409,7 +409,7 @@ content {
   height: 24px;
   padding: 12px 0 0 50px;
   border: 1px solid #e8e8e8;
-  background: url(../img/line.png) right 12px no-repeat;
+  background: url(../../img/line.png) right 12px no-repeat;
   font: 13px "Ubuntu", Arial;
   text-transform: uppercase; }
 
