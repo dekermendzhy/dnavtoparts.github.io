@@ -245,11 +245,11 @@ menu {
 .content__site {
   margin: 0 auto;
   height: 500px;
-  display: block;
+  text-align: center;
   background-color: #2a2d32; }
 
 .content__site .info {
-  margin: 0 0 0 53px;
+  margin: 0 0 0 0;
   display: block;
   width: 140px;
   height: 25px;
@@ -257,7 +257,7 @@ menu {
   font: 24px "Ubuntu", Arial; }
 
 .content__site .first {
-  margin: 98px 0 0 52px;
+  margin: 98px 0 0 3px;
   display: inline-block;
   width: 260px;
   height: 260px;
@@ -306,33 +306,36 @@ menu {
 
 content {
   margin: 0 auto;
+  width: 1240px;
   height: 725px;
   display: block;
   background-color: #ffffff; }
 
-.content__title {
-  margin: 59px 0 0 53px;
+.content__last {
+  margin: 0 29px 157px 0;
   display: block;
+  float: left;
+  width: 614px;
+  height: 470px; }
+
+.content__last .title {
+  margin: 59px 0 1px 43px;
+  display: block;
+  width: 160px;
+  height: 26px;
   font: 24px "Ubuntu", Arial;
   color: #2a2d32;
   float: left;
   overflow: hidden; }
 
-.content__last {
-  margin: 0 33px 157px 0;
-  display: block;
-  float: left;
-  width: 620px;
-  height: 470px; }
-
 .content__last .news {
-  margin: 48px 0 -17px 34px;
+  margin: 49px 0 -19px 32px;
   display: block;
   height: 147px;
   float: left; }
 
 .content__last .photo {
-  margin: -4px 35px 0 0;
+  margin: -4px 33px 0 -7px;
   float: left;
   display: block;
   width: 167px;
@@ -379,20 +382,27 @@ content {
   line-height: 20px; }
 
 .content__banners {
-  margin: 58px 0 44px 0;
+  margin: 0 0 0 0;
   display: block;
+  float: left;
+  width: 576px;
+  height: 470px; }
+
+.content__banners .title {
+  margin: 58px 0 0 0;
+  display: block;
+  width: 160px;
+  height: 26px;
   font: 24px "Ubuntu", Arial;
   color: #2a2d32;
   float: left;
   overflow: hidden; }
 
-.accordion {
-  margin: 0 0 0 0;
-  display: block;
-  width: 559px;
-  height: 325px; }
+.content__banners .accordion {
+  margin: 47px 0 0 0;
+  display: block; }
 
-.accordion span {
+.content__banners .accordion span {
   margin-bottom: 6px;
   display: block;
   width: 506px;
@@ -403,14 +413,14 @@ content {
   font: 13px "Ubuntu", Arial;
   text-transform: uppercase; }
 
-.accordion span:hover {
+.content__banners .accordion span:hover {
   color: white;
   background-color: #f4b60d; }
 
-.accordion span.active {
+.content__banners .accordion span.active {
   background-position: right -45px; }
 
-.accordion p {
+.content__banners .accordion p {
   margin: 26px 0 39px 38px;
   display: block;
   width: 516px;
@@ -424,7 +434,7 @@ content {
   display: block; }
 
 .content__sponsor .rbp {
-  margin: 0 0 0 50px;
+  margin: 0 0 0 40px;
   display: inline-block;
   width: 143px;
   height: 62px; }
