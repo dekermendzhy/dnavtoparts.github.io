@@ -284,16 +284,16 @@ var skills = _.map(objs, 'skills');
 var skillsJoin = _.union(_.flatMap(skills));
 var skillsSorted = _.sortBy(skillsJoin);
 
-var friendsSorted = _.sortBy(_.map(objs, 'friends'));
+var friendsSorted = _.sortBy(objs, 'friends');
+var friendsSortedByName = _.map(friendsSorted, 'name');
 
 var name = _.map(objs, 'name');
 var frend = _.map(objs, 'friends');
 var friends = _.union(_.flatMap(frend));
 var frendAll = _.map(friends, 'name');
-var allNameFriends = _.concat(name, frendAll);
-var all = _.sortBy(_.union(_.flatMap(allNameFriends)));
+var all = _.union(_.flatMap(frendAll));
 
     console.log(skillsSorted);
-    console.log(friendsSorted);
+    console.log(friendsSortedByName);
     console.log(all);
 });

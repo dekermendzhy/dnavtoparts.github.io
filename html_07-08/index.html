@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/smartphone320.css">
-    <link rel="stylesheet" href="css/smartphone480.css">
-    <link rel="stylesheet" href="css/smartphone768.css">
-    <link rel="stylesheet" href="css/smartphone960.css">
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/jcarousel.js"></script>
     <script src="js/script.js"></script>
@@ -16,7 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="wrapper">
             <a href="#" class="logo"></a>
                 <div class="header-menu">
@@ -81,36 +78,46 @@
         </div>
     </header>
 
-    <div class="header-info">
+    <div class="header__info">
         <div class="wrapper">
-            <p class="header-info_company">About our company</p>
-            <P class="header-info_text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pel-lensque vel lacus eget nisi convallis aucrot. Nam</p>
-            <a class="header-info_next" href="#">Read more</a>
+            <div class="header__info-company">
+                <p class="header__info-title">About our company</p>
+                <p class="header__info-text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pel-lensque vel lacus eget nisi convallis aucrot. Nam</p>
+                <a class="header__info-link" href="#">Read more</a>
+            </div>
 
-            <p class="header-info_company2">About our company</p>
-            <P class="header-info_text2">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pel-lensque vel lacus eget nisi convallis aucrot. Nam</p>
-            <a class="header-info_next" href="#">Read more</a>
+            <div class="header__info-company2">
+                <p class="header__info-title">About our company</p>
+                <P class="header__info-text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pel-lensque vel lacus eget nisi convallis aucrot. Nam</p>
+                <a class="header__info-link" href="#">Read more</a>
+            </div>
 
-            <p class="header-info_company3">About our company</p>
-            <P class="header-info_text3">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pel-lensque vel lacus eget nisi convallis aucrot. Nam</p>
-
-            <a class="header-info_next" href="#">Read more</a>
+            <div class="header__info-company3">
+                <p class="header__info-title">About our company</p>
+                <P class="header__info-text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pel-lensque vel lacus eget nisi convallis aucrot. Nam</p>
+                <a class="header__info-link" href="#">Read more</a>
+            </div>
         </div>
-        <div class="line-green"></div>
-        <div class="line-black"></div>
+            <div class="line-green">
+
+            </div>
+            <div class="line-black">
+
+            </div>
     </div>
 
-    <content class="content">
+    <div class="content">
         <div class="wrapper">
-            <div class="content-first">
-                <div class="border">
-                    <div class="content-first-photo">
-                        <img src="img/content-first-photo.png" alt="">
-                    </div>
-                        <p class="content-first_text">pingbuller</p>
-                        <p class="content-first_text2">starts here</p>
-                        <p class="content-first_text3">“Nunc turpis neque, feu-giat eget eleifend et, lacinia non neque. Prae-sent rhoncus ultrices po-suere. Pellentesque vel lacus eget nisi con-vallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl."</p>
-                        <p class="content-first_text4">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar</p>
+            <div class="content__block">
+                <div class="content__block-photo">
+                    <img src="img/content-first-photo.png" alt="">
+                </div>
+
+                <div class="content__block-box">
+                    <p class="content__block-text">pingbuller</p>
+                    <p class="content__block-text2">starts here</p>
+                    <p class="content__block-text3">“Nunc turpis neque, feu-giat eget eleifend et, lacinia non neque. Prae-sent rhoncus ultrices po-suere. Pellentesque vel lacus eget nisi con-vallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl."</p>
+                    <p class="content__block-text4">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar</p>
                 </div>
             </div>
 
@@ -118,80 +125,50 @@
                 <img src="img/lines2.png" alt="">
             </div>
 
-            <div class="content-second">
-                <p class="content-updates">recent updates</p>
-                    <div class="block">
-                        <div class="content-photo">
-                            <img src="img/content-photo.png" alt="">
+            <div class="updates">
+                <p class="updates__name">recent updates</p>
+                        <div class="updates__item">
+                            <a class="updates__item-link1" href="#"></a>
+                            <p class="updates__item-name">Nunc turpis neque feugiat eget</p>
+                            <p class="updates__item-text">Posted by Admin on March 13 2012 in Recent News</p>
                         </div>
 
-                        <div class="content-second-photo">
-                            <img src="img/content-second-photo.png" alt="">
-                        </div>
-                            <p class="content-second_text">Nunc turpis neque feugiat eget</p>
-                            <p class="content-second_text2">Posted by Admin on March 13 2012 in Recent News</p>
-                    </div>
-
-                    <div class="block2">
-                        <div class="content-photo">
-                            <img src="img/content-photo.png" alt="">
+                        <div class="updates__item">
+                            <a class="updates__item-link2" href="#"></a>
+                            <p class="updates__item-name">Nunc turpis neque feugiat eget</p>
+                            <p class="updates__item-text">Posted by Admin on March 13 2012 in Category</p>
                         </div>
 
-                        <div class="content-second-photo2">
-                            <img src="img/content-second-photo2.png" alt="">
-                        </div>
-                            <p class="content-second_text">Nunc turpis neque feugiat eget</p>
-                            <p class="content-second_text2">Posted by Admin on March 13 2012 in Category</p>
-                    </div>
-
-                    <div class="block3">
-                        <div class="content-photo">
-                            <img src="img/content-photo.png" alt="">
+                        <div class="updates__item-last">
+                            <a class="updates__item-link3" href="#"></a>
+                            <p class="updates__item-name">Nunc turpis neque feugiat eget</p>
+                            <p class="updates__item-text">Posted by Admin on March 13 2012 in Blog Updates</p>
                         </div>
 
-                        <div class="content-second-photo3">
-                            <img src="img/content-second-photo2.png" alt="">
-                        </div>
-                            <p class="content-second_text">Nunc turpis neque feugiat eget</p>
-                            <p class="content-second_text2">Posted by Admin on March 13 2012 in Blog Updates</p>
-                    </div>
-
-                <a class="content-second_next" href="#">more blog posts</a>
-                <a class="content-second_next2" href="#">read more here</a>
+                <a class="updates__more" href="#">more blog posts</a>
+                <a class="updates__more1" href="#">read more here</a>
 
 
             </div>
 
         </div>
         <div class="lines-white"></div>
-    </content>
+    </div>
 
-    <div class="sponsors">
+<div class="sponsors">
         <div class="wrapper">
-            <div class="sponsors1">
-                <img src="img/sponsors1.png" alt="">
-            </div>
-            <div class="sponsors2">
-                <img src="img/sponsors2.png" alt="">
-            </div>
-            <div class="sponsors3">
-                <img src="img/sponsors3.png" alt="">
-            </div>
-            <div class="sponsors4">
-                <img src="img/sponsors4.png" alt="">
-            </div>
-            <div class="sponsors5">
-                <img src="img/sponsors5.png" alt="">
-            </div>
-            <div class="sponsors6">
-                <img src="img/sponsors6.png" alt="">
-            </div>
+            <a href="#" class="logo1"></a>
+            <a href="#" class="logo2"></a>
+            <a href="#" class="logo3"></a>
+            <a href="#" class="logo4"></a>
+            <a href="#" class="logo5"></a>
+            <a href="#" class="logo6"></a>
         </div>
     </div>
 
     <div class="lines-grey"></div>
 
-    <content class="content-footer">
+    <!-- <content class="content-footer">
         <div class="wrapper">
             <div class="content-footer_first">
                 <p class="content-footer_categories1">news categories</p>
@@ -217,7 +194,7 @@
         </div>
     </content>
 
-    <footer class="footer">
+    <footer>
         <div class="wrapper">
             <ul class="footer-links">
                 <li><a href="#">Home</a></li>
@@ -230,6 +207,6 @@
             <span class="footer-text_first">Designed by</span>
             <span class="footer-text_second">Pingbull AS</span>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
