@@ -30,7 +30,12 @@ gulp.task('watch', function () {
     return gulp.src('css/src/*.sass')
         .pipe(watch('css/src/style.sass'))
         .pipe(sass())
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('css'))
+        .pipe(uglifycss({
+          "maxLineLen": 80,
+          "uglyComments": true
+        }))
+        .pipe(gulp.dest('css/dist'));
 });
 
 gulp.task('css', function () {

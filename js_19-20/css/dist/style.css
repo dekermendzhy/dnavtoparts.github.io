@@ -54,7 +54,7 @@ content{margin:0 auto;width:1240px;height:725px;display:block;background-color:#
 .content__sponsor .cruseir{margin:0 0 0 55px;display:inline-block;width:143px;height:62px}
 .content__sponsor .gear{margin:0 0 0 33px;display:inline-block;width:143px;height:62px}
 footer{margin:0 auto;margin-top:58px;display:block;height:385px}.footer__links{margin:0 auto;display:block;height:325px;background-color:#2a2d32}
-.footer__links .socials{margin:59px 0 0 0;display:block;float:left;width:300px;height:190px}
+.footer__links .socials{margin:59px 0 0 91px;display:block;float:left;width:300px;height:190px}
 .footer__links .title{margin:0 0 0 52px;float:left;display:block;width:78px;height:18px;font:16px "Ubuntu",Arial;color:#fff;text-transform:uppercase}
 .footer__links .links_1{margin:62px 0 0 53px;display:block;width:120px;height:16px;color:#828385;font:13px Arial,sans-serif}
 .footer__links .links_2,.footer__links .links_3,.footer__links .links_4{margin:10px 0 0 53px;display:block;width:158px;height:16px;font:13px Arial,sans-serif}
@@ -65,7 +65,7 @@ footer{margin:0 auto;margin-top:58px;display:block;height:385px}.footer__links{m
 .footer__links .blog{margin:59px 0 0 0;display:block;float:left;width:300px;height:190px}
 .footer__links .about{margin:59px 0 0 0;display:block;float:left;width:300px;height:190px}
 .footer__contacts{margin:0 auto;display:flex;height:60px;background-color:#35383c}
-.footer__contacts .addr{margin:22px 0 0 54px;width:309px;height:20px}.footer__contacts .loc{margin:0;width:12px;height:16px}
+.footer__contacts .addr{margin:22px 0 0 144px;width:309px;height:20px}.footer__contacts .loc{margin:0;width:12px;height:16px}
 .footer__contacts .address{margin:1px 0 0 11px;height:20px;font:12px Arial,sans-serif;color:#6f7073;letter-spacing:.1px}
 .footer__contacts .phone{margin:22px 0 0 18px;width:135px;height:20px}.footer__contacts .iphone{margin:0;width:11px;height:16px}
 .footer__contacts .number{margin:2px 0 0 7px;height:20px;font:12px Arial,sans-serif;color:#6f7073;letter-spacing:.1px}
