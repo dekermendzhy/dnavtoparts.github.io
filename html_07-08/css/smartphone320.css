@@ -1,7 +1,7 @@
 @media (min-width: 320px) and (max-width: 479px){
     .wrapper{
         margin: 0 auto;
-        min-width: 320px;
+        width: 320px;
     }
     header{
         padding-top: 70px;
@@ -269,12 +269,12 @@
         overflow: hidden;
     }
     .updates__item{
-        margin: 0 0 16px 42px;
+        margin: 0 0 16px 32px;
         width: 293px;
         height: 50px;
     }
     .updates__item-last{
-        margin: 0 0 0 42px;
+        margin: 0 0 0 32px;
         width: 293px;
         height: 50px;
     }
