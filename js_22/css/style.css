@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 10px 30px
+}
+.question-answer{
+    display: inline;
+    list-style-type: none;
+}
+#Send{
+    margin: 60px 0 0 70px;
+    width: 180px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: green;
+}
+#Reset{
+    margin: 0 0 0 0;
+}
+h2{
+    margin-bottom: 15px;
+}
+p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+ul{
+    margin: 0 0 20px 0;
+}
+input[type="checkbox"]{
+    margin: 0 5px 0 15px;
+}
+#modal_form {
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: #fff;
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -150px;
+	display: none;
+	opacity: 0;
+	z-index: 5;
+	padding: 20px 10px;
+}
+#modal_form #modal_close{
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+    color: black;
+}
+.button{
+    margin: 100px 0 0 105px;
+    width: 80px;
+    height: 20px;
+    display: block;
+}

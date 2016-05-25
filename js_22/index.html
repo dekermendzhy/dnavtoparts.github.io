@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.12.0/lodash.js"></script>
+    <script src="js/dist/script.js"></script>
+</head>
+<body>
+
+    <script type="text/template" id="test">
+        <div class="wrapper">
+            <h2>Тест</h2>
+            <form action="index.html" method="post">
+                <% for(let i = 0; i < str.length; i++) { %>
+                    <ul class="<%= 'question' + (i + 1) %>">
+                        <p><%= str[i].question %></p>
+                        <% for(let j = 0; j < str[i].answers.length; j++) { %>
+                            <li class="<%= 'question-answer ' + (i + 1) + (j + 1) %>">
+                                <label for="<%= 'check' + (i + 1) + (j + 1) %>">
+                                    <input type="checkbox" id="<%= 'check' + (i + 1) + (j + 1) %>" value="<%= str[i].value[j] %>">
+                                    <span><%= str[i].answers[j] %></span>
+                                </label>
+                            </li>
+                            <% } %>
+                    </ul>
+                    <% } %>
+            </form>
+
+            <input type="button" id="Send" value="Проверить мои результаты">
+        </div>
+    </script>
+
+    <div id="modal_form">
+      <span id="modal_close">X</span>
+      <button class="button" type="button">Сброс теста</button>
+    </div>
+
+</body>
+</html>
