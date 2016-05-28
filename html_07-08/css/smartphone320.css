@@ -415,10 +415,11 @@
         display: none;
     }
     footer{
-        float: left;
-        width: 100%;
         padding-top: 32px;
-        padding-bottom: 135px;
+        float: left;
+        display: block;
+        width: 100%;
+        height: 169px;
         background: url(../img/footer.png);
         background-position: top center;
         background-repeat: no-repeat;
