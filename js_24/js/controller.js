@@ -7,7 +7,7 @@ define(
     ],
     function(){
         return{
-            controller: function (model, view) {
+            controller: function(model, view){
                 var self = this;
                 var ENTER_KEY = 13;
 
@@ -18,18 +18,19 @@ define(
                         addItem();
                     }
                 });
-                view.elements.listContainer.on('dblclick', 'label', function(event){
-                    var thisData = this.innerHTML,
-                        $el = $('<input type="text" class="edit-input">');
-                     $(this).replaceWith($el);
-                     $el.val(thisData).focus();
+                view.elements.listContainer.on('dblclick', 'label', function(){
+                    var thisData = this.innerHTML;
+                    var $editInput = $('<input type="text" class="edit-input">');
+                    $(this).replaceWith($editInput);
+                    $editInput.val(thisData).focus();
                 });
-                view.elements.editInput.on('keydown', function (e) {
+                view.elements.edit.on('keydown', function (e) {
                     if ( e.which == ENTER_KEY ) {
-                        editItem();
+
+                        alert('s');
+
                     }
                 });
-
 
 
                 function addItem(){
@@ -47,14 +48,6 @@ define(
                     model.removeItem(item);
                     view.renderList(model.data);
                 }
-
-
-                // function editItem(){
-                //     var edit = view.elements.editInput.val();
-                //
-                //     model.editItem(edit);
-                //     view.renderList(model.data);
-                // }
             }
         };
     }

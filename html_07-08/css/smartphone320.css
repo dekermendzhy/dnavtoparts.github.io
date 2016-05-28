@@ -410,7 +410,7 @@
     .lines-grey{
         display: none;
     }
-    .content-footer{
+    content{
         display: none;
     }
     footer{
@@ -423,10 +423,10 @@
         background-repeat: no-repeat;
         text-align: center;
     }
-    .footer-links{
+    .footer__links{
         display: none;
     }
-    .footer-text_first{
+    .footer__links-first{
         color: white;
         font-family: 'Open Sans', Arial, sans-serif;
         font-size: 12px;
@@ -434,7 +434,7 @@
         line-height: 34px;
         text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
     }
-    .footer-text_second{
+    .footer__links-second{
         color: white;
         font-family: 'Open Sans', Arial, sans-serif;
         font-size: 12px;

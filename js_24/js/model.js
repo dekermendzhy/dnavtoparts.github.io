@@ -5,13 +5,13 @@ define(
     ],
     function(){
         return {
-            model: function (data) {
+            model: function(data){
                 var self = this;
 
                 self.data = data;
 
                 self.addItem = function (item) {
-                    if (item.length === 0){
+                    if ( item.length === 0 ){
                         return;
                     }
 
@@ -20,9 +20,9 @@ define(
                     return self.data;
                 };
 
-                self.removeItem = function (item) {
+                self.removeItem = function(item){
                     var index = self.data.indexOf(item);
-                        if (index === -1){
+                        if ( index === -1 ){
                             return;
                         }
 
@@ -30,7 +30,13 @@ define(
 
                         return self.data;
                     };
+
+                self.editItem = function(index, item){
+                    self.data[index] = item;
+
+                    return self.data;
                 }
-            };
-        }
+            }
+        };
+    }
 );

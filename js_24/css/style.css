@@ -3,18 +3,16 @@
     padding: 0;
 }
 body{
-    background-color: grey;
+    background-color: #009999;
 }
 .wrapper{
     margin: 0 auto;
     margin-top: 170px;
     padding: 10px 0 15px 15px;
-    width: 200px;
+    width: 350px;
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
-}
-.item-span{
 }
 li{
     margin-bottom: 10px;
@@ -23,7 +21,7 @@ li{
 }
 .item-delete{
     margin-top: 3px;
-    margin-left: 10px;
+    margin-left: -33px;
     display: inline-block;
     text-align: center;
     width: 19px;
@@ -35,11 +33,38 @@ li{
 }
 .item-add{
     display: inline-block;
-    width: 62px;
-    height: 20px;
-    background-color: #3BA3D0;
+    width: 68px;
+    height: 27px;
+    background-color: #5CCDC9;
     border: 1px solid white;
     border-radius: 10px;
     color: black;
     outline: none;
+}
+.item-value{
+    margin-left: 31px;
+    width: 212px;
+    height: 27px;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #8370D8;
+    color: white;
+    font: 14px Arial, sans-serif;
+    text-align: center;
+}
+label{
+    display: inline-block;
+    padding: 10px 0 10px 20px;
+    width: 316px;
+    border-radius: 10px;
+    background-color: #644AD8;
+}
+.edit-input{
+    display: inline-block;
+    padding: 10px 0 10px 10px;
+    width: 322px;
+    border-radius: 10px;
+    background-color: grey;
+    font: 14px Arial, sans-serif;
+    text-align: center;
 }

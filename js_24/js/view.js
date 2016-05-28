@@ -7,10 +7,10 @@ define(
     ],
     function(){
         return{
-            view: function view(model) {
+            view: function view(model){
                 var self = this;
 
-                function init () {
+                function init(){
                     var wrapper = tmpl($('#wrapper-template').html());
                         $('body').append(wrapper);
                         self.elements = {
@@ -18,12 +18,12 @@ define(
                             addBtn: $('.item-add'),
                             listContainer: $('.item-list'),
                             label: $('label'),
-                            editInput: $('.edit-input')
+                            edit: $('.edit-input')
                         };
                         self.renderList(model.data);
                     }
 
-                    self.renderList = function (data) {
+                    self.renderList = function(data){
                         var list = tmpl($('#list-template').html(), {data: data});
 
                         self.elements.listContainer.html(list);
