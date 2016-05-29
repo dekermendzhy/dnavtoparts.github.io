@@ -18,19 +18,32 @@ define(
                         addItem();
                     }
                 });
-                view.elements.listContainer.on('dblclick', 'label', function(){
-                    var thisData = this.innerHTML;
-                    var $editInput = $('<input type="text" class="edit-input">');
-                    $(this).replaceWith($editInput);
-                    $editInput.val(thisData).focus();
-                });
-                view.elements.edit.on('keydown', function (e) {
-                    if ( e.which == ENTER_KEY ) {
+                view.elements.listContainer.on('dblclick', '.item-label', editItem);
 
-                        alert('s');
+                function editItem(){
+                    var target = $(event.target);
+                    var value = $(this).text();
+                    var inputText = $(this).siblings('.edit-input').val(value);
+                    var index = model.data.indexOf(target.attr('data-value'));
 
+                    console.log(index);
+                    console.log(model.data);
+
+                    target.parent('.todoitem').addClass('editing');
+
+
+                $('.edit-input').on('keydown', function(e){
+                    var item = inputText.val();
+                    if( e.which == ENTER_KEY ){
+                        model.editItem(index, item);
+                        view.renderList(model.data);
+
+                        console.log(model.data);
+
+                        target.parent('.todoitem').removeClass('editing');
                     }
-                });
+                })
+            };
 
 
                 function addItem(){

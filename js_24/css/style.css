@@ -52,14 +52,17 @@ li{
     font: 14px Arial, sans-serif;
     text-align: center;
 }
-label{
+.editing .item-label{
+    display: none;
+}
+.item-label{
     display: inline-block;
     padding: 10px 0 10px 20px;
     width: 316px;
     border-radius: 10px;
     background-color: #644AD8;
 }
-.edit-input{
+.editing .edit-input{
     display: inline-block;
     padding: 10px 0 10px 10px;
     width: 322px;
@@ -67,4 +70,7 @@ label{
     background-color: grey;
     font: 14px Arial, sans-serif;
     text-align: center;
+}
+.edit-input{
+    display: none;
 }

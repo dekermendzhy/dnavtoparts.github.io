@@ -7,7 +7,7 @@
     <!-- <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script> -->
     <!-- <script src="js/script.js"></script> -->
     <!-- <script src="js/tmpl.js"></script> -->
-    <script data-main="js/app" src="js/require.js"></script>
+    <script src="js/main-built.js"></script>
 </head>
 <body>
 
@@ -23,8 +23,9 @@
 
     <script type="text/template" id="list-template">
         <% for (var i = 0; i < data.length; i++) { %>
-            <li>
-                <label><%= data[i] %></label>
+            <li id="<%= i + 1 %>" class="todoitem">
+                <label id="<%= i + 1 %>" class="item-label" data-value="<%= data[i] %>"><%= data[i] %></label>
+                <input type="text" id="<%= i + 1 %>" class="edit-input" value="">
                 <span data-value="<%= data[i] %>" class="item-delete">X</span>
             </li>
             <% }; %>

@@ -16,9 +16,7 @@ define(
                         self.elements = {
                             input: $('.item-value'),
                             addBtn: $('.item-add'),
-                            listContainer: $('.item-list'),
-                            label: $('label'),
-                            edit: $('.edit-input')
+                            listContainer: $('.item-list')
                         };
                         self.renderList(model.data);
                     }
