@@ -10,8 +10,12 @@ define(
 
                 self.data = data;
 
-                self.addItem = function (item) {
+                self.addItem = function(item){
                     if ( item.length === 0 ){
+                        return;
+                    }
+
+                    if( item.indexOf(' ') === 0 ){
                         return;
                     }
 
