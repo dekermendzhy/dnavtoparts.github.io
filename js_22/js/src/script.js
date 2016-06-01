@@ -1,5 +1,3 @@
-'use strict';
-
 let test = [
 {
     question: '1. 2 x 2 = ?',
@@ -30,8 +28,7 @@ $(function() {
 });
 
 
-$(function() {
-
+$(function () {
 
     let $answer = $('input[type="checkbox"]');
         $answer.on('click', function() {
@@ -43,53 +40,80 @@ $(function() {
         });
 
 
-    let $button = $('input[type="button"]');
-        $button.on('click', function() {
+    let $submitResults = $('input[type="button"]');
+        $submitResults.on('click', function () {
             event.preventDefault();
-            let $result;
+            let $result = true;
             $answer.each(function() {
                 if ($(this).prop('checked') != ($(this).attr('value') == 'true')) {
                     $result = false;
-                    $('#modal_form').append('<span>Тест не пройден</span>').css({
-                        textAlign : 'center',
-                        color : 'red'
-                    });
                     return false;
-                } else {
-                    $result = true;
-                    $('#modal_form').append('<span>Тест пройден!</span>').css({
-                        textAlign : 'center',
-                        color : 'green'
-                    });
                 }
-                return false;
             });
             console.log($result);
-        });
 
 
-            $button.on('click', () => {
-                event.preventDefault();
-                $('#modal_form').css({
-                    display : 'block'
-                }).animate({
-                    opacity: 1,
-                    top: '50%'
-                }, 200);
+            let $trueResultsArray = _.flatMap(str, 'value');
+            console.log($trueResultsArray);
+
+            let $resultsArray = $answer.map(function() {
+                if ($(this).prop('checked')) {
+                    return this.value;
+                }
+            }).get();
+            console.log($resultsArray);
+            let rightAnswers = 0;
+            let trueRightAnswers = 0;
+            let badAnswers = 0;
+            for (let value of $resultsArray) {
+                if (value == 'true') {
+                    rightAnswers++;
+                } else {
+                    badAnswers++;
+                }
+            }
+            for (let value of $trueResultsArray) {
+                if (value == 'true') {
+                    trueRightAnswers++;
+                }
+            }
+            let count = (rightAnswers * 100) / trueRightAnswers;
+
+            if ($result === false) {
+                $('.modal-title').html('Тест не пройден! Хватит гадать!');
+                $('.modal-result').html('Вы ответили верно на : ' + count + '% вопросов');
+            }
+
+            if ( $resultsArray.length > trueRightAnswers) {
+                $('.modal-title').html('Тест не пройден! Хватит гадать!');
+                $('.modal-result').html('Может повторим попытку?');
+            }
+
+            if ($result === true) {
+                $('.modal-title').html('Поздравляем! Вы гений!');
+                $('.modal-result').html('Вы ответили верно на : ' + count + '% вопросов');
+            }
+
+
+            $('.overlay').fadeIn(400, () => {
+                $('.modal-window')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'}, 200);
             });
 
-            $('#modal_close').on('click', () => {
-                $('#modal_form').animate({
-                    opacity: 0,
-                    top: '45%'
-                }, 200, () => {
-                    $(this).css({
-                        display : 'none'
-                    });
-                }
-            );
-        });
+            $('.modal-close, .overlay, .modal-buttons input').on('click', function(){
+                $('.modal-window')
+                    .animate({opacity: 0, top: '45%'}, 200,
+                        function(){
+                            $(this).css('display', 'none');
+                            $('.overlay').fadeOut(400);
+                        }
+                    );
+                $answer.each(function() {
+                    $(this).removeAttr('checked');
+                    localStorage.clear();
+                });
+            });
 
-        let $buttonReload = $('.button');
-            $buttonReload.on('click', () => { location.reload(); });
+        });
 });

@@ -25,7 +25,6 @@ $(function () {
 });
 
 $(function () {
-    var _this = this;
 
     var $answer = $('input[type="checkbox"]');
     $answer.on('click', function () {
@@ -36,53 +35,116 @@ $(function () {
         }
     });
 
-    var $button = $('input[type="button"]');
-    $button.on('click', function () {
+    var $submitResults = $('input[type="button"]');
+    $submitResults.on('click', function () {
         event.preventDefault();
-        var $result = void 0;
+        var $result = true;
         $answer.each(function () {
             if ($(this).prop('checked') != ($(this).attr('value') == 'true')) {
                 $result = false;
-                $('#modal_form').append('<span>Тест не пройден</span>').css({
-                    textAlign: 'center',
-                    color: 'red'
-                });
                 return false;
-            } else {
-                $result = true;
-                $('#modal_form').append('<span>Тест пройден!</span>').css({
-                    textAlign: 'center',
-                    color: 'green'
-                });
             }
-            return false;
         });
         console.log($result);
-    });
 
-    $button.on('click', function () {
-        event.preventDefault();
-        $('#modal_form').css({
-            display: 'block'
-        }).animate({
-            opacity: 1,
-            top: '50%'
-        }, 200);
-    });
+        var $trueResultsArray = _.flatMap(str, 'value');
+        console.log($trueResultsArray);
 
-    $('#modal_close').on('click', function () {
-        $('#modal_form').animate({
-            opacity: 0,
-            top: '45%'
-        }, 200, function () {
-            $(_this).css({
-                display: 'none'
+        var $resultsArray = $answer.map(function () {
+            if ($(this).prop('checked')) {
+                return this.value;
+            }
+        }).get();
+        console.log($resultsArray);
+        var rightAnswers = 0;
+        var trueRightAnswers = 0;
+        var badAnswers = 0;
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = $resultsArray[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var value = _step.value;
+
+                if (value == 'true') {
+                    rightAnswers++;
+                } else {
+                    badAnswers++;
+                }
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+
+        var _iteratorNormalCompletion2 = true;
+        var _didIteratorError2 = false;
+        var _iteratorError2 = undefined;
+
+        try {
+            for (var _iterator2 = $trueResultsArray[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                var _value = _step2.value;
+
+                if (_value == 'true') {
+                    trueRightAnswers++;
+                }
+            }
+        } catch (err) {
+            _didIteratorError2 = true;
+            _iteratorError2 = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                    _iterator2.return();
+                }
+            } finally {
+                if (_didIteratorError2) {
+                    throw _iteratorError2;
+                }
+            }
+        }
+
+        var count = rightAnswers * 100 / trueRightAnswers;
+
+        if ($result === false) {
+            $('.modal-title').html('Тест не пройден! Хватит гадать!');
+            $('.modal-result').html('Вы ответили верно на : ' + count + '% вопросов');
+        }
+
+        if ($resultsArray.length > trueRightAnswers) {
+            $('.modal-title').html('Тест не пройден! Хватит гадать!');
+            $('.modal-result').html('Может повторим попытку?');
+        }
+
+        if ($result === true) {
+            $('.modal-title').html('Поздравляем! Вы гений!');
+            $('.modal-result').html('Вы ответили верно на : ' + count + '% вопросов');
+        }
+
+        $('.overlay').fadeIn(400, function () {
+            $('.modal-window').css('display', 'block').animate({ opacity: 1, top: '50%' }, 200);
+        });
+
+        $('.modal-close, .overlay, .modal-buttons input').on('click', function () {
+            $('.modal-window').animate({ opacity: 0, top: '45%' }, 200, function () {
+                $(this).css('display', 'none');
+                $('.overlay').fadeOut(400);
+            });
+            $answer.each(function () {
+                $(this).removeAttr('checked');
+                localStorage.clear();
             });
         });
-    });
-
-    var $buttonReload = $('.button');
-    $buttonReload.on('click', function () {
-        location.reload();
     });
 });

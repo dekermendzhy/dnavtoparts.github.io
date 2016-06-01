@@ -7,6 +7,7 @@
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/lodash/4.12.0/lodash.js"></script>
     <script src="js/dist/script.js"></script>
+    <!-- <script src="js/src/script.js"></script> -->
 </head>
 <body>
 
@@ -33,9 +34,22 @@
         </div>
     </script>
 
-    <div id="modal_form">
-      <span id="modal_close">X</span>
-      <button class="button" type="button">Сброс теста</button>
+    <div class="modal-window">
+        <div class="modal-header">
+            <span class="modal-title"></span>
+            <span class="modal-close">×</span>
+        </div>
+        <div class="modal-body">
+            <span class="modal-result"></span>
+        </div>
+        <div class="modal-footer">
+            <form class="modal-buttons" action="index.html" method="post">
+                <input type="button" name="name" value="Повторить попытку">
+            </form>
+        </div>
+    </div>
+    <div class="overlay">
+
     </div>
 
 </body>

@@ -33,23 +33,38 @@ ul{
 input[type="checkbox"]{
     margin: 0 5px 0 15px;
 }
-#modal_form {
-	width: 300px;
-	height: 300px;
-	border-radius: 5px;
-	border: 3px #000 solid;
-	background: #fff;
-	position: fixed;
-	top: 45%;
-	left: 50%;
-	margin-top: -150px;
-	margin-left: -150px;
-	display: none;
-	opacity: 0;
-	z-index: 5;
-	padding: 20px 10px;
+.modal-window{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 500px;
+    height: 180px;
+    margin: 0 auto;
+    margin-left: -250px;
+    margin-top: -90px;
+    background-color: white;
+    box-shadow: 0 0 15px 1px rgba(0,0,0,0.3);
+    border: 1px solid rgba(176, 176, 176, 1);
+    border-radius: 5px;
+    z-index: 9000;
+    display: none;
 }
-#modal_form #modal_close{
+.modal-header{
+    margin: 0 auto;
+    width: 400px;
+    height: auto;;
+    border-bottom: 1px solid #c9e6f2;
+}
+.modal-title{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+    height: 30px;
+    width: 270px;
+    color: grey;
+}
+.modal-close{
 	width: 21px;
 	height: 21px;
 	position: absolute;
@@ -57,10 +72,54 @@ input[type="checkbox"]{
 	right: 10px;
 	cursor: pointer;
 	display: block;
-    color: black;
+    color: grey;
+}
+.modal-body{
+    margin: 0 auto;
+    width: 400px;
+    height: 80px;
+    border-bottom: 1px solid #c9e6f2;
+    overflow: hidden;
+}
+.modal-result{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    color: grey;
+}
+.modal-buttons{
+    text-align: center;
+    margin: 0 auto;
+}
+.modal-buttons input{
+    height: 30px;
+    cursor: pointer;
+    border: 0px;
+    margin-top: 11px;
+    margin-left: 15px;
+    background-color: rgba(51, 122, 183, 1);
+    border: 1px solid rgba(46, 109, 164, 1);
+    border-radius: 3px;
+    font-size: 12px;
+    color: white;
+}
+.modal-buttons input:hover{
+    cursor: pointer;
+    background-color: rgba(34, 85, 130, 1);
+}
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 8999;
+    display: none;
 }
 .button{
-    margin: 100px 0 0 105px;
+    margin: 20px auto;
     width: 80px;
     height: 20px;
     display: block;
