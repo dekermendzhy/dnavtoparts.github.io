@@ -1,0 +1,447 @@
+@media (min-width: 320px) and (max-width: 479px){
+    .wrapper{
+        margin: 0 auto;
+        width: 320px;
+    }
+    header{
+        padding-top: 70px;
+        background: url(../img/bg.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+    .logo{
+        margin: 0 auto;
+        display: block;
+        width: 152px;
+        height: 39px;
+        background: url(../img/logo.png) 0 0 no-repeat;
+    }
+    .header-menu{
+        padding-top: 38px;
+        text-align: center;
+    }
+    .header-home{
+        padding-bottom: 1px;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 24px;
+        line-height: 24px;
+        border-bottom: 2px solid #edbfff;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+    }
+    .header-home-menu{
+        display: none;
+    }
+    .header-text{
+        display: block;
+        height: 324px;
+        text-align: center;
+    }
+    .jcarousel-wrapper {
+        margin: 20px auto;
+        position: relative;
+        width: 320px;
+        height: 260px;
+    }
+    .jcarousel {
+        position: relative;
+        overflow: hidden;
+    }
+    .jcarousel ul {
+        width: 20000em;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .jcarousel li {
+        float: left;
+        width: 320px;
+        height: 260px;
+    }
+    .jcarousel-control-prev,
+    .jcarousel-control-next {
+        position: absolute;
+        top: 118px;
+    }
+    .jcarousel-control-prev {
+        left: 0;
+    }
+    .jcarousel-control-next {
+        right: 0;
+    }
+    .jcarousel-control-prev:hover span,
+    .jcarousel-control-next:hover span {
+        display: block;
+    }
+    .header-text_block{
+        margin-top: 104px;
+    }
+    .header-text_block2{
+        margin-top: 104px;
+    }
+    .header-text_block3{
+        margin-top: 104px;
+    }
+    .header-text_first{
+        padding: 0 0 0 0;
+        color: #fefefe;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 36px;
+    }
+    .header-text_second{
+        padding: 3px 0 0 10px;
+        color: #edbfff;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .header-text_third{
+        display: none;
+    }
+    .iphone,
+    .iphone4{
+        display: none;
+    }
+    .header__info{
+        border-top: 1px solid #33253a;
+        background: linear-gradient(to top, #322539, #745083);
+    }
+    .header__info-company{
+        margin: 71px 0 0 -14px;
+        display: block;
+        text-align: center;
+    }
+    .header__info-company2{
+        margin: 24px 0 0 -14px;
+        display: block;
+        text-align: center;
+    }
+    .header__info-company3{
+        margin: 40px 0 0 -14px;
+        display: block;
+        text-align: center;
+    }
+    .header__info-title{
+        padding: 0 0 0 0;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        text-shadow: 0.5px 0.9px 0 #0f1518;
+        text-transform: uppercase;
+    }
+    .header__info-text{
+        display: block;
+        margin: 0 auto;
+        padding: 1px 0 0 57px;
+        width: 199px;
+        height: 70px;
+        color: white;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: -0.08px;
+        text-align: left;
+        text-shadow: 0.5px 0.9px 0 #0f1518;
+        overflow: hidden;
+    }
+    .header__info-link{
+        padding: 21px 0 0 227px;
+        display: block;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 18px;
+        text-decoration: none;
+        text-shadow: 0.5px 0.9px 0 #0f1518;
+        text-transform: uppercase;
+    }
+    .header__info-link:hover{
+        padding: 21px 0 0 227px;
+        display: block;
+        color: white;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 18px;
+        text-decoration: none;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+    }
+    .line-green{
+        padding-top: 58px;
+        border-bottom: 1px solid #1d2f37;
+    }
+    .line-black{
+        height: 1px;
+        border-top: 1px solid #0d151b;
+    }
+    .content{
+        margin: 0 auto;
+        float: left;
+        width: 100%;
+        height: 763px;
+        background-color: #f9f9f9;
+        border-top: 1px solid #12191f;
+        border-bottom: 1px solid #e6e6e6;
+        overflow: hidden;
+    }
+    .content__block{
+        margin: 0 auto;
+        padding-top: 88px;
+        padding-left: 18px;
+        width: 300px;
+        height: 285px;
+    }
+    .content__block-photo{
+        padding: 0 12px 0 0;
+        float: left;
+        width: 49px;
+        height: 49px;
+    }
+    .content__block-box{
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 280px;
+        height: 272px;
+        border-top: 1px solid transparent;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+    }
+    .content__block-text{
+        padding: 8px 0 0 0;
+        color: #454545;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: left;
+        text-shadow: 0.5px 0.9px 0 white;
+        text-transform: uppercase;
+    }
+    .content__block-text2{
+        padding-left: 4px;
+        color: #edbfff;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: left;
+        text-shadow: 0.5px 0.9px 0 white;
+        text-transform: uppercase;
+    }
+    .content__block-text3{
+        padding: 4px 0 0 63px;
+        width: 178px;
+        height: 165px;
+        color: #454545;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        text-shadow: 0.5px 0.9px 0 white;
+        overflow: hidden;
+    }
+    .content__block-text4{
+        display: none;
+    }
+    .lines2{
+        padding: 0 0 0 45px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .updates{
+        margin: 0 auto;
+        margin-top: 31px;
+        width: 360px;
+        height: 269px;
+    }
+    .updates__name{
+        padding: 0 0 16px 40px;
+        width: 140px;
+        height: 35px;
+        color: #454545;
+        font: 30px 'league_gothicregular', Arial, sans-serif;
+        font-weight: 400;
+        text-shadow: 0.5px 0.9px 0 white;
+        text-transform: uppercase;
+        overflow: hidden;
+    }
+    .updates__item{
+        margin: 0 0 16px 32px;
+        width: 293px;
+        height: 50px;
+    }
+    .updates__item-last{
+        margin: 0 0 0 32px;
+        width: 293px;
+        height: 50px;
+    }
+    .updates__item-link1{
+        padding: 0 17px 0 0;
+        float: left;
+        width: 49px;
+        height: 49px;
+        background: url(../img/content-photo.png) 0 0 no-repeat;
+    }
+    .updates__item-link2{
+        padding: 0 17px 0 0;
+        float: left;
+        width: 49px;
+        height: 49px;
+        background: url(../img/content-photo2.png) 0 0 no-repeat;
+    }
+    .updates__item-link3{
+        padding: 0 16px 0 0;
+        float: left;
+        width: 49px;
+        height: 49px;
+        background: url(../img/content-photo3.png) 0 0 no-repeat;
+    }
+    .updates__item-name{
+        margin: 0 0 3px 0;
+        width: 153px;
+        height: 21px;
+        display: block;
+        color: #454545;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        text-shadow: 0.5px 0.9px 0 white;
+        overflow: hidden;
+    }
+    .updates__item-text{
+        width: 219px;
+        height: 23px;
+        display: block;
+        color: #454545;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: left;
+        text-shadow: 0.5px 0.9px 0 white;
+        overflow: hidden;
+    }
+    .updates__more{
+        margin: 19px 0 0 228px;
+        display: block;
+        color: #454545;
+        font-family: 'league_gothicregular', Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+        text-decoration: none;
+        text-shadow: 0.5px 0.9px 0 white;
+        text-transform: uppercase;
+    }
+    .updates__more1{
+        display: none;
+    }
+    .lines-white{
+        margin: 90px 0 0 0;
+        height: 1px;
+        border-top: 1px solid #e6e6e6;
+        overflow: hidden;
+    }
+    .sponsors{
+        margin: 0 auto;
+        float: left;
+        width: 100%;
+        height: 422px;
+        overflow: hidden;
+    }
+    .logos{
+        margin: 0 auto;
+        width: 100%;
+        height: 422px;
+    }
+    .logo1{
+        margin: 51px 0 0 63px;
+        display: block;
+        float: left;
+        width: 69px;
+        height: 64px;
+        background: url(../img/sponsors1.png) 0 0 no-repeat;
+    }
+    .logo2{
+        margin: 51px 0 0 54px;
+        display: block;
+        float: left;
+        width: 72px;
+        height: 64px;
+        background: url(../img/sponsors2.png) 0 0 no-repeat;
+    }
+    .logo3{
+        margin: 62px 0 0 70px;
+        display: block;
+        float: left;
+        width: 65px;
+        height: 65px;
+        background: url(../img/sponsors3.png) 0 0 no-repeat;
+    }
+    .logo4{
+        margin: 63px 0 0 49px;
+        display: block;
+        float: left;
+        width: 66px;
+        height: 65px;
+        background: url(../img/sponsors4.png) 0 0 no-repeat;
+    }
+    .logo5{
+        margin: 42px 0 0 42px;
+        display: block;
+        float: left;
+        width: 105px;
+        height: 61px;
+        background: url(../img/sponsors5.png) 0 0 no-repeat;
+    }
+    .logo6{
+        margin: 43px 0 0 43px;
+        display: block;
+        float: left;
+        width: 90px;
+        height: 61px;
+        background: url(../img/sponsors6.png) 0 0 no-repeat;
+    }
+    .lines-grey{
+        display: none;
+    }
+    .content__footer{
+        display: none;
+    }
+    footer{
+        padding-top: 32px;
+        float: left;
+        display: block;
+        width: 100%;
+        height: 169px;
+        background: url(../img/footer.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    .footer__links{
+        display: none;
+    }
+    .footer__links-first{
+        color: white;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 34px;
+        text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
+    }
+    .footer__links-second{
+        color: white;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 34px;
+        text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
+    }
+}
