@@ -3,7 +3,7 @@
         margin: 0 auto;
         width: 960px;
     }
-    header{
+    .header{
         padding-top: 70px;
         background: url(../img/bg.jpg);
         background-position: top center;
@@ -28,16 +28,8 @@
         text-transform: uppercase;
     }
     .header-home:hover{
-        margin: 5px 0 0 174px;
-        float: left;
-        display: inline-block;
-        color: white;
-        font-family: 'league_gothicregular', Arial, sans-serif;
-        font-size: 24px;
-        line-height: 24px;
         border-bottom: 2px solid #edbfff;
-        text-decoration: none;
-        text-transform: uppercase;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
     }
     .header-home-menu{
         list-style: none;
@@ -62,7 +54,6 @@
         text-transform: uppercase;
     }
     .header-menu-link:hover{
-        color: white;
         border-bottom: 2px solid #edbfff;
         text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
     }
@@ -160,7 +151,7 @@
     .header-text_second{
         margin: 9px 0 0 0;
         display: block;
-        width: 402px;
+        width: 416px;
         color: #edbfff;
         font-family: 'league_gothicregular', Arial, sans-serif;
         font-size: 33px;
@@ -186,7 +177,9 @@
         width: 100%;
         height: 340px;
         border-top: 1px solid #33253a;
-        background: linear-gradient(to top, #322539, #745083);
+        background: linear-gradient(#745083 0%, #322539 100%);
+        background-image: -moz-linear-gradient(top, #745083 0%, #322539 100%);
+        background: -o-linear-gradient(#745083 0%, #322539 100%);
     }
     .header__info-company{
         margin: 74px 0 0 0;
@@ -641,7 +634,7 @@
         text-shadow: 0.5px 0.9px 0 white;
         overflow: hidden;
     }
-    footer{
+    .footer{
         margin: 0 0 0 0;
         width: 100%;
         height: 150px;

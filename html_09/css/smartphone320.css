@@ -3,7 +3,7 @@
         margin: 0 auto;
         width: 320px;
     }
-    header{
+    .header{
         padding-top: 70px;
         background: url(../img/bg.jpg);
         background-position: top center;
@@ -107,7 +107,9 @@
     }
     .header__info{
         border-top: 1px solid #33253a;
-        background: linear-gradient(to top, #322539, #745083);
+        background: linear-gradient(#745083 0%, #322539 100%);
+        background-image: -moz-linear-gradient(top, #745083 0%, #322539 100%);
+        background: -o-linear-gradient(#745083 0%, #322539 100%);
     }
     .header__info-company{
         margin: 71px 0 0 -14px;
@@ -414,7 +416,7 @@
     .content__footer{
         display: none;
     }
-    footer{
+    .footer{
         padding-top: 32px;
         float: left;
         display: block;
