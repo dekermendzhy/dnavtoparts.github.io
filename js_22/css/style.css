@@ -3,7 +3,7 @@
     padding: 0;
 }
 .wrapper{
-    margin: 10px 30px
+    margin: 100px 50px
 }
 .question-answer{
     display: inline;
@@ -33,15 +33,15 @@ ul{
 input[type="checkbox"]{
     margin: 0 5px 0 15px;
 }
-.modal-window{
+.modal-form{
     position: absolute;
     left: 50%;
     top: 40%;
-    width: 500px;
-    height: 180px;
+    width: 300px;
+    padding: 20px 10px;
     margin: 0 auto;
-    margin-left: -250px;
-    margin-top: -90px;
+    margin-left: -150px;
+    margin-top: -200px;
     background-color: white;
     box-shadow: 0 0 15px 1px rgba(0,0,0,0.3);
     border: 1px solid rgba(176, 176, 176, 1);
@@ -51,7 +51,7 @@ input[type="checkbox"]{
 }
 .modal-header{
     margin: 0 auto;
-    width: 400px;
+    width: 300px;
     height: auto;;
     border-bottom: 1px solid #c9e6f2;
 }
@@ -76,7 +76,7 @@ input[type="checkbox"]{
 }
 .modal-body{
     margin: 0 auto;
-    width: 400px;
+    width: 300px;
     height: 80px;
     border-bottom: 1px solid #c9e6f2;
     overflow: hidden;
@@ -114,7 +114,7 @@ input[type="checkbox"]{
     left: 0px;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 8999;
     display: none;
 }

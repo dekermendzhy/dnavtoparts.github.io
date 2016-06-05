@@ -133,11 +133,11 @@ $(function () {
         }
 
         $('.overlay').fadeIn(400, function () {
-            $('.modal-window').css('display', 'block').animate({ opacity: 1, top: '50%' }, 200);
+            $('.modal-form').css('display', 'block').animate({ opacity: 1, top: '50%' }, 200);
         });
 
         $('.modal-close, .overlay, .modal-buttons input').on('click', function () {
-            $('.modal-window').animate({ opacity: 0, top: '45%' }, 200, function () {
+            $('.modal-form').animate({ opacity: 0, top: '45%' }, 200, function () {
                 $(this).css('display', 'none');
                 $('.overlay').fadeOut(400);
             });

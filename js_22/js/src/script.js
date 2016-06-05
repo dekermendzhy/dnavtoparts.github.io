@@ -96,13 +96,13 @@ $(function () {
 
 
             $('.overlay').fadeIn(400, () => {
-                $('.modal-window')
+                $('.modal-form')
                     .css('display', 'block')
                     .animate({opacity: 1, top: '50%'}, 200);
             });
 
             $('.modal-close, .overlay, .modal-buttons input').on('click', function(){
-                $('.modal-window')
+                $('.modal-form')
                     .animate({opacity: 0, top: '45%'}, 200,
                         function(){
                             $(this).css('display', 'none');
