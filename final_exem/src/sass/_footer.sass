@@ -1,0 +1,314 @@
+@import sass/_mixins
+@import sass/_variables
+@import sass/sprite
+
++mobile
+    .footer
+        margin: 0 auto
+        margin-top: 24px
+        max-width: 320px
+
+        &__line
+            margin: 0 auto
+            height: 4px
+            background-color: #ff4e50
+
+        &__title
+            margin: 0 auto
+            margin-top: 17px
+            display: block
+            width: 142px
+            height: 16px
+            color: #ff4e50
+            font: 16px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+            text-transform: uppercase
+
+        &__company
+            margin: 0 auto
+            margin-top: 14px
+            margin-bottom: 25px
+            display: block
+            width: 67px
+            height: 13px
+            color: #333
+            font: 14px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+
+    nav
+        margin-top: -117px
+        display: block
+
+    .link
+        margin: 0 auto
+        margin-bottom: 10px
+        display: inline-flex
+        height: 27px
+        color: #666
+        font: 14px 'robotolight', Arial, sans-serif
+        font-weight: 300
+        line-height: 24px
+
+        .item__first
+            padding: 3px 0 0 62px
+            cursor: pointer
+
+        .item__second
+            padding: 3px 0 0 12px
+            cursor: pointer
+
+        .item__third
+            padding: 3px 0 0 14px
+            cursor: pointer
+
+        .item__fourth
+            padding: 3px 0 0 13px
+            cursor: pointer
+
+    a
+        text-decoration: none
+
+    .footer__partners
+        margin: 0 auto
+        padding-top: 12px
+        display: block
+        width: 59px
+        height: 10px
+        color: #333
+        font: 14px 'montserratbold' Arial , sans-serif
+        font-weight: 700
+
+    .footer__created
+        margin: 0 auto
+        padding-top: 20px
+        display: block
+        height: 50px
+
+    .footer__designed
+        margin: 0 auto
+        display: block
+        width: 79px
+        height: 11px
+        color: #ccc
+        font: 10px 'montserratbold' Arial , sans-serif
+        font-weight: 700
+        letter-spacing: 0.9px
+        text-transform: uppercase
+
+    .footer__logo
+        margin: 9px 0 0 103px
+        display: block
+        +sprite($five)
+
++tablet
+    .footer
+        margin: 0 auto
+        margin-top: 86px
+        width: 768px
+
+        &__line
+            margin: 0 auto
+            height: 4px
+            background-color: #ff4e50
+
+        &__title
+            margin: 37px 0 0 41px
+            display: inline-block
+            width: 142px
+            height: 16px
+            color: #ff4e50
+            font: 16px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+            letter-spacing: 0.5px
+            text-decoration: none
+            text-transform: uppercase
+
+        &__company
+            margin-left: 80px
+            display: inline-block
+            width: 67px
+            height: 13px
+            color: #333
+            font: 14px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+            letter-spacing: 0.5px
+
+        &__partners
+            margin: 0 0 0 100px
+            display: inline-block
+            width: 59px
+            height: 15px
+            color: #333
+            font: 14px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+
+        &__created
+            margin: 0 0 0 16px
+            display: inline-block
+            height: 50px
+
+        &__designed
+            margin: 0 0 0 132px
+            display: inline-block
+            width: 79px
+            height: 11px
+            color: #ccc
+            font: 10px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+            letter-spacing: 0.9px
+            text-transform: uppercase
+
+        &__logo
+            margin: 4px 0 0 102px
+            display: block
+            +sprite($five)
+
+    nav
+        margin: -25px 0 0 265px
+        display: block
+        width: 100px
+
+    .link
+        margin: 0 0 0 0
+        display: block
+        color: #666
+        font: 14px 'robotolight', Arial, sans-serif
+        font-weight: 300
+        line-height: 24px
+
+        .item__first
+            margin: 0 0 0 0
+            display: block
+            width: 100px
+            cursor: pointer
+
+        .item__second
+            margin: 0 0 0 0
+            display: block
+            width: 100px
+            cursor: pointer
+
+        .item__third
+            margin: 0 0 0 0
+            display: block
+            width: 100px
+            cursor: pointer
+
+        .item__fourth
+            margin: 0 0 0 0
+            display: block
+            width: 100px
+            cursor: pointer
+
+    a
+        text-decoration: none
+
++desktop
+    .footer
+        margin: 0 auto
+        margin-top: 86px
+        width: 960px
+
+        &__line
+            margin: 0 auto
+            height: 4px
+            background-color: #ff4e50
+
+        &__title
+            margin: 39px 0 0 17px
+            display: inline-block
+            width: 142px
+            height: 16px
+            color: #ff4e50
+            font: 16px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+            letter-spacing: 0.5px
+            text-decoration: none
+            text-transform: uppercase
+
+        &__company
+            margin-left: 94px
+            display: inline-block
+            width: 67px
+            height: 13px
+            color: #333
+            font: 14px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+            letter-spacing: 0.5px
+
+        &__partners
+            margin: 0 0 0 90px
+            display: inline-block
+            width: 59px
+            height: 15px
+            color: #333
+            font: 14px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+
+        &__created
+            margin: 0 0 0 264px
+            display: inline-block
+            height: 50px
+
+        &__designed
+            margin: 0 0 0 132px
+            display: inline-block
+            width: 79px
+            height: 11px
+            color: #ccc
+            font: 10px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+            letter-spacing: 0.9px
+            text-transform: uppercase
+
+        &__logo
+            margin: 4px 0 0 102px
+            display: block
+            +sprite($five)
+
+    nav
+        margin: -25px 0 0 257px
+        display: block
+        width: 100px
+
+    .link
+        margin: 0 0 0 0
+        display: block
+        color: #666
+        font: 14px 'robotolight', Arial, sans-serif
+        font-weight: 300
+        line-height: 24px
+
+        .item__first
+            margin: 0 0 0 0
+            display: block
+            width: 100px
+            cursor: pointer
+
+        .item__second
+            margin: 0 0 0 0
+            display: block
+            width: 100px
+            cursor: pointer
+
+        .item__third
+            margin: 0 0 0 0
+            display: block
+            width: 100px
+            cursor: pointer
+
+        .item__fourth
+            margin: 0 0 0 0
+            display: block
+            width: 100px
+            cursor: pointer
+
+        &__item
+            color: #666
+            text-decoration: none
+            transition:all .2s ease-in-out
+
+        &__item:hover
+            color: red
+            border-bottom: 1px solid red
+            transition:all .2s ease-in-out

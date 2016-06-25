@@ -1,0 +1,1438 @@
+@import sass/_mixins
+@import sass/_variables
+@import sass/sprite
+
++mobile
+    .content
+        margin: 0 auto
+        padding-top: 35px
+        max-width: 320px
+
+        &__title
+            display: block
+            color: #333333
+            font: 22px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+            text-align: center
+
+    .jcarousel__wrapper
+        margin: 0 auto
+        position: relative
+        width: 304px
+        height: 756px
+
+    .jcarousel__box--first,
+    .jcarousel__box--second,
+    .jcarousel__box--third
+        width: 303px
+        height: 260px
+        position: relative
+        overflow: hidden
+
+    .jcarousel__box--first ul,
+    .jcarousel__box--second ul,
+    .jcarousel__box--third ul
+        width: 20000px
+        height: 240px
+        position: relative
+        list-style: none
+        padding: 0
+
+    .jcarousel__item
+        margin: 5px auto
+        float: left
+        width: 304px
+        height: 240px
+
+    .jcarousel__item--first
+        .jcarousel__link
+            display: block
+            width: 301px
+            height: 240px
+            background: url(../image/mstep1.png) 0 0 no-repeat
+            text-decoration: none
+
+            .jcarousel__button
+                margin: 69px 0 0 22px
+                display: inline-block
+                width: 70px
+                height: 20px
+                background-color: #ff4e50
+                +border-radius(10px)
+                border: 1px solid #ff4e50
+
+            .step
+                display: inline-block
+                width: 42px
+                height: 8px
+                color: white
+                font: 10px 'montserratbold' Arial , sans-serif
+                text-transform: uppercase
+
+            .jcarousel__title
+                margin: 17px 0 0 20px
+                display: block
+                width: 170px
+                height: 49px
+                color: white
+                font: 24px 'montserratbold' Arial , sans-serif
+                font-weight: 700
+                letter-spacing: 1.1px
+
+            .jcarousel__text
+                margin: 20px 0 0 20px
+                display: block
+                width: 263px
+                height: 45px
+                color: #ccc
+                font: 14px 'robotolight', Arial, sans-serif
+                font-weight: 300
+
+    .jcarousel__item--second
+        .jcarousel__link
+            display: block
+            width: 301px
+            height: 240px
+            background: url(../image/mstep2.png) 0 0 no-repeat
+            text-decoration: none
+
+            .jcarousel__button
+                margin: 100px 0 0 22px
+                display: inline-block
+                width: 70px
+                height: 20px
+                background-color: #ff4e50
+                border: 1px solid #ff4e50
+                +border-radius(10px)
+
+            .step
+                display: inline-block
+                width: 42px
+                height: 8px
+                color: white
+                font: 10px 'montserratbold' Arial , sans-serif
+                text-transform: uppercase
+
+            .jcarousel__title
+                margin: 15px 0 0 21px
+                display: block
+                width: 196px
+                height: 20px
+                color: white
+                font: 24px 'montserratbold' Arial , sans-serif
+                font-weight: 700
+                letter-spacing: 0.7px
+
+            .jcarousel__text
+                margin: 19px 0 0 21px
+                display: block
+                width: 263px
+                height: 45px
+                color: #ccc
+                font: 14px 'robotolight', Arial, sans-serif
+                font-weight: 300
+
+    .jcarousel__item--third
+        .jcarousel__link
+            display: block
+            width: 301px
+            height: 240px
+            background: url(../image/mstep3.png) 0 0 no-repeat
+            text-decoration: none
+
+            .jcarousel__button
+                margin: 68px 0 0 23px
+                display: inline-block
+                width: 70px
+                height: 20px
+                background-color: #ff4e50
+                +border-radius(10px)
+                border: 1px solid #ff4e50
+
+            .step
+                display: inline-block
+                width: 42px
+                height: 8px
+                color: white
+                font: 10px 'montserratbold' Arial , sans-serif
+                text-transform: uppercase
+
+            .jcarousel__title
+                margin: 17px 0 0 20px
+                display: block
+                width: 170px
+                height: 49px
+                color: white
+                font: 24px 'montserratbold' Arial , sans-serif
+                font-weight: 700
+                letter-spacing: 1.1px
+
+            .jcarousel__text
+                margin: 20px 0 0 20px
+                display: block
+                width: 263px
+                height: 45px
+                color: #ccc
+                font: 14px 'robotolight', Arial, sans-serif
+                font-weight: 300
+
+    .content__partner
+        margin-top: 35px
+
+        .text
+            margin-left: 12px
+            display: block
+            width: 290px
+            height: 50px
+            color: #333333
+            font: 22px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+            letter-spacing: 1px
+            text-align: center
+
+        .item
+            display: block
+            height: 214px
+
+            & .photo
+                margin: 0 auto
+                margin-top: 15px
+                display: block
+                +border-radius(100%)
+                transition: all 0.7s ease
+
+            & .photo:hover
+                box-shadow: 0px 28px 16px -26px black
+                transform: scale(1.1)
+
+            & .hobby
+                margin: -35px 0 0 183px
+                display: block
+                +sprite($first-red)
+                opacity: 1
+                position: absolute
+                transition: all 0.9s ease
+                z-index: 20
+
+            & .hobby:hover
+                +border-radius(50%)
+                box-shadow: 0px 0px 15px 15px #fff
+                transform: rotate(720deg)
+
+            & .name
+                display: block
+                width: 106px
+                height: 14px
+                color: #333
+                font: 14px 'montserratbold' Arial , sans-serif
+                font-weight: 700
+                letter-spacing: 0.4px
+
+            & .info
+                display: block
+                width: 240px
+                height: 29px
+                color: #666
+                font: 14px 'robotolight', Arial, sans-serif
+                font-weight: 300
+                text-align: center
+
+        .item__first
+
+            .photo
+                +sprite($first)
+
+            .name
+                margin: 18px 0 0 106px
+
+            .info
+                margin: 17px 0 0 39px
+
+        .item__second
+            margin: 0 0 0 0
+            display: block
+            height: 247px
+
+            .photo
+                +sprite($second)
+
+            .hobby
+                +sprite($second-yellow)
+
+            .name
+                margin: 19px 0 0 110px
+
+            .info
+                margin: 17px 0 0 47px
+                display: block
+                width: 220px
+                height: 66px
+
+        .item__third
+            margin: 0 0 0 0
+            display: block
+            height: 204px
+
+            .photo
+                +sprite($third)
+
+            .hobby
+                +sprite($third-green)
+
+            .name
+                margin: 19px 0 0 103px
+                display: block
+                width: 110px
+
+            .info
+                margin: 16px 0 0 48px
+                display: block
+                width: 215px
+
+        .item__fourth
+            margin-top: 25px
+            display: block
+            height: 204px
+
+            .photo
+                +sprite($fourth)
+
+            .hobby
+                +sprite($fourth-blue)
+
+            .name
+                margin: 18px 0 0 104px
+
+            .info
+                margin: 16px 0 0 36px
+
+    .partner__link
+        margin: 0 0 0 0
+        display: block
+        height: 68px
+
+        .link
+            margin: 23px 0 0 18px
+            display: inline-block
+            width: 276px
+            height: 40px
+            background-color: white
+            border: 2px solid #ff4e50
+            +border-radius(20px)
+
+        .text
+            margin: 12px 0 0 73px
+            display: inline-block
+            width: 132px
+            height: 14px
+            color: #ff4e50
+            font: 14px 'robotolight', Arial, sans-serif
+            font-weight: 700
+            letter-spacing: 0.46px
+            text-decoration: none
+
+    .partner__search
+        margin-top: 25px
+        display: block
+        height: 1215px
+
+    .first
+        margin-top: 7px
+        margin-left: 23px
+        display: inline-block
+        width: 273px
+        height: 44px
+        color: #333
+        font: 22px 'montserratbold' Arial , sans-serif
+        font-weight: 700
+        letter-spacing: 0.6px
+        text-align: center
+
+    .grid
+        display: block
+        height: 910px !important
+
+        &-item
+            margin: 11px auto
+            position: relative
+            display: block
+            width: 300px
+            height: 120px
+            text-decoration: none
+            transition: all 0.7s ease
+
+        &-item:hover
+            box-shadow: 0px 28px 16px -26px black
+            transform: scale(1.1)
+
+        &-title
+            margin: 0 auto
+            padding-top: 50px
+            display: block
+            color: white
+            font: 22px 'montserratbold' Arial , sans-serif
+            text-align: center
+
+        &-error
+            color: red
+            font: 14px 'montserratbold' Arial , sans-serif
+            text-align: center
+
+    .second
+        margin: 33px 0 0 21px
+        display: inline-block
+        width: 273px
+        height: 44px
+        color: #333
+        font: 22px 'montserratbold' Arial , sans-serif
+        font-weight: 700
+        letter-spacing: 0.6px
+        text-align: center
+
+    .question
+        margin: 16px 0 0 21px
+        display: inline-block
+        width: 276px
+        height: 18px
+        color: #333
+        font: 18px 'robotolight', Arial, sans-serif
+        font-weight: 300
+        letter-spacing: -0.3px
+        text-align: center
+
+    .searching
+        margin: 17px 0 0 17px
+        display: block
+        width: 278px
+        height: 36px
+        background-color: white
+        border: 1px solid #ccc
+        +border-radius(4px)
+        box-shadow: 0 1px 0 #eee
+
+    .search_button
+        margin: 10px 0 0 18px
+        width: 280px
+        height: 40px
+        background-color: #ff4e50
+        +border-radius(20px)
+        border: 1px solid #ff4e50
+        color: white
+        cursor: pointer
+        font: 14px 'montserratbold' Arial , sans-serif
+        font-weight: 700
+
++tablet
+    .content
+        margin: 0 auto
+        padding-top: 95px
+        width: 768px
+
+        &__title
+            display: block
+            color: #333333
+            font: 22px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+            text-align: center
+
+    .jcarousel__wrapper
+        margin: 0 auto
+        position: relative
+        display: inline-flex
+        width: 768px
+        height: 436px
+
+    .jcarousel__box--first,
+    .jcarousel__box--second,
+    .jcarousel__box--third
+        width: 248px
+        position: relative
+        overflow: hidden
+
+    .jcarousel__box--first ul,
+    .jcarousel__box--second ul,
+    .jcarousel__box--third ul
+        width: 20000px
+        height: 436px
+        position: relative
+        list-style: none
+        padding: 0
+
+    .jcarousel__item
+        margin: 33px 0 0 9px
+        float: left
+        width: 236px
+        height: 403px
+
+    .jcarousel__item--first
+        .jcarousel__link
+            display: block
+            width: 236px
+            height: 401px
+            background: url(../image/tstep1.png) 0 0 no-repeat
+            text-decoration: none
+
+            .jcarousel__button
+                margin: 214px 0 0 22px
+                display: inline-block
+                width: 70px
+                height: 20px
+                background-color: #ff4e50
+                +border-radius(10px)
+                border: 1px solid #ff4e50
+
+            .step
+                display: inline-block
+                width: 42px
+                height: 8px
+                color: white
+                font: 10px 'montserratbold' Arial , sans-serif
+                text-transform: uppercase
+
+            .jcarousel__title
+                margin: 17px 0 0 20px
+                display: block
+                width: 170px
+                height: 49px
+                color: white
+                font: 24px 'montserratbold' Arial , sans-serif
+                font-weight: 700
+                letter-spacing: 1.1px
+
+            .jcarousel__text
+                margin: 20px 0 0 18px
+                display: block
+                width: 210px
+                height: 68px
+                color: #ccc
+                font: 14px 'robotolight', Arial, sans-serif
+                font-weight: 300
+
+    .jcarousel-control-prev,
+    .jcarousel-control-next
+        position: absolute
+        top: 74px
+
+    .jcarousel-control-prev
+        left: 30px
+
+    .jcarousel-control-next
+        right: 21px
+
+    .jcarousel-control-prev:hover span,
+    .jcarousel-control-next:hover span
+        display: block
+
+    .jcarousel__item--second
+        .jcarousel__link
+            display: block
+            width: 236px
+            height: 401px
+            background: url(../image/tstep2.png) 0 0 no-repeat
+            text-decoration: none
+
+            .jcarousel__button
+                margin: 261px 0 0 29px
+                display: inline-block
+                width: 70px
+                height: 20px
+                background-color: #ff4e50
+                +border-radius(10px)
+                border: 1px solid #ff4e50
+
+            .step
+                display: inline-block
+                width: 42px
+                height: 8px
+                color: white
+                font: 10px 'montserratbold' Arial , sans-serif
+                text-transform: uppercase
+
+            .jcarousel__title
+                margin: 17px 0 0 28px
+                display: block
+                width: 204px
+                height: 49px
+                color: white
+                font: 24px 'montserratbold' Arial , sans-serif
+                font-weight: 700
+                letter-spacing: 1.1px
+
+            .jcarousel__text
+                margin: -11px 0 0 29px
+                display: block
+                width: 208px
+                height: 68px
+                color: #ccc
+                font: 14px 'robotolight', Arial, sans-serif
+                font-weight: 300
+
+    .jcarousel__item--third
+        .jcarousel__link
+            display: block
+            width: 236px
+            height: 401px
+            background: url(../image/tstep3.jpg) 0 0 no-repeat
+            text-decoration: none
+
+            .jcarousel__button
+                margin: 214px 0 0 22px
+                display: inline-block
+                width: 70px
+                height: 20px
+                background-color: #ff4e50
+                +border-radius(10px)
+                border: 1px solid #ff4e50
+
+            .step
+                display: inline-block
+                width: 42px
+                height: 8px
+                color: white
+                font: 10px 'montserratbold' Arial , sans-serif
+                text-transform: uppercase
+
+            .jcarousel__title
+                margin: 17px 0 0 20px
+                display: block
+                width: 170px
+                height: 49px
+                color: white
+                font: 24px 'montserratbold' Arial , sans-serif
+                font-weight: 700
+                letter-spacing: 1.1px
+
+            .jcarousel__text
+                margin: 20px 0 0 18px
+                display: block
+                width: 210px
+                height: 68px
+                color: #ccc
+                font: 14px 'robotolight', Arial, sans-serif
+                font-weight: 300
+
+    .content__partner
+        margin-top: 35px
+
+        .text
+            margin: 0 auto
+            padding-top: 58px
+            display: block
+            width: 414px
+            height: 50px
+            color: #333333
+            font: 22px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+            letter-spacing: 0.7px
+            text-align: center
+
+        .item
+            display: inline-block
+            height: 214px
+
+            & .photo
+                margin: 0 auto
+                margin-top: 0
+                display: block
+                +border-radius(100%)
+                transition: all 0.7s ease
+
+            & .photo:hover
+                box-shadow: 0px 28px 16px -26px black
+                transform: scale(1.1)
+
+            & .hobby
+                margin: -35px 0 0 183px
+                display: block
+                +sprite($first-red)
+                opacity: 1
+                position: absolute
+                transition: all 0.9s ease
+                z-index: 20
+
+            & .hobby:hover
+                +border-radius(50%)
+                box-shadow: 0px 0px 15px 15px #fff
+                transform: rotate(720deg)
+
+            & .name
+                display: block
+                width: 106px
+                height: 14px
+                color: #333
+                font: 14px 'montserratbold' Arial , sans-serif
+                font-weight: 700
+                letter-spacing: 0.4px
+
+            & .info
+                display: block
+                width: 240px
+                height: 29px
+                color: #666
+                font: 14px 'robotolight', Arial, sans-serif
+                font-weight: 300
+                text-align: center
+
+        .item__first
+            margin: 7px 0 0 127px
+            display: inline-block
+            width: 257px
+            height: 204px
+
+            .photo
+                +sprite($first)
+
+            .hobby
+                margin: -35px 0 0 154px
+                display: block
+                +sprite($first-red)
+                opacity: 1
+                position: absolute
+                transition: all 0.9s ease
+                z-index: 20
+
+            .hobby:hover
+                +border-radius(50%)
+                box-shadow: 0px 0px 15px 15px #fff
+                transform: rotate(720deg)
+
+            .name
+                margin: 18px 0 0 77px
+
+            .info
+                margin: 17px 0 0 9px
+
+        .item__second
+            margin: 56px 0 0 129px
+            display: inline-block
+            width: 257px
+            height: 233px
+
+            .photo
+                +sprite($second)
+
+            .hobby
+                margin: -35px 0 0 154px
+                display: block
+                +sprite($second-yellow)
+                opacity: 1
+                position: absolute
+                transition: all 0.9s ease
+                z-index: 20
+
+            .hobby:hover
+                +border-radius(50%)
+                box-shadow: 0px 0px 15px 15px #fff
+                transform: rotate(720deg)
+
+            .name
+                margin: 19px 0 0 79px
+
+            .info
+                margin: 16px 0 0 16px
+                display: block
+                width: 220px
+                height: 66px
+
+        .item__third
+            position: absolute
+            top: 1409px
+            right: 109px
+            display: inline-block
+            width: 257px
+            height: 204px
+
+            .photo
+                +sprite($third)
+
+            .hobby
+                margin: -35px 0 0 151px
+                display: block
+                +sprite($third-green)
+                opacity: 1
+                position: absolute
+                transition: all 0.9s ease
+                z-index: 20
+
+            .hobby:hover
+                +border-radius(50%)
+                box-shadow: 0px 0px 15px 15px #fff
+                transform: rotate(720deg)
+
+            .name
+                margin: 19px 0 0 74px
+                display: block
+                width: 110px
+
+            .info
+                margin: 16px 0 0 18px
+                display: block
+                width: 215px
+
+        .item__fourth
+            position: absolute
+            top: 1668px
+            right: 109px
+            display: inline-block
+            width: 257px
+            height: 204px
+
+            .photo
+                +sprite($fourth)
+
+            .hobby
+                margin: -35px 0 0 151px
+                display: block
+                +sprite($fourth-blue)
+                opacity: 1
+                position: absolute
+                transition: all 0.9s ease
+                z-index: 20
+
+            .hobby:hover
+                +border-radius(50%)
+                box-shadow: 0px 0px 15px 15px #fff
+                transform: rotate(720deg)
+
+            .name
+                margin: 18px 0 0 73px
+
+            .info
+                margin: 16px 0 0 5px
+
+    .partner__link
+        margin: 0 0 0 0
+        display: block
+        height: 80px
+
+        .link
+            margin: 36px 0 0 287px
+            display: inline-block
+            width: 189px
+            height: 40px
+            background-color: white
+            border: 2px solid #ff4e50
+            +border-radius(20px)
+
+        .text
+            margin: 12px 0 0 28px
+            display: inline-block
+            width: 135px
+            height: 14px
+            color: #ff4e50
+            font: 14px 'robotolight', Arial, sans-serif
+            font-weight: 700
+            letter-spacing: 0.46px
+            text-decoration: none
+
+    .partner__search
+        margin: 0 auto
+        display: block
+        height: 1390px
+
+    .first
+        margin-top: 95px
+        margin-left: 215px
+        display: inline-block
+        width: 339px
+        height: 44px
+        color: #333
+        font: 22px 'montserratbold' Arial , sans-serif
+        font-weight: 700
+        letter-spacing: 0.6px
+        text-align: center
+
+    .grid
+        display: block
+        height: 988px !important
+
+        &-item
+            margin: 15px 4px 6px 10px
+            position: relative
+            display: block
+            float: left
+            width: 31.5%
+            height: 310px
+            text-decoration: none
+            transition: all 0.7s ease
+
+        &-item:hover
+            box-shadow: 0px 28px 16px -26px black
+            transform: scale(1.1)
+
+        &-item:nth-child(5),
+        &-item:nth-child(6)
+            position: relative
+            display: block
+            float: left
+            width: 64%
+            height: 310px
+
+        &-title
+            margin: 0 auto
+            padding-top: 50px
+            display: block
+            color: white
+            font: 22px 'montserratbold' Arial , sans-serif
+            text-align: center
+
+        &-error
+            color: red
+            font: 14px 'montserratbold' Arial , sans-serif
+            text-align: center
+
+    .second
+        margin: 87px 0 0 212px
+        display: inline-block
+        width: 273px
+        height: 44px
+        color: #333
+        font: 22px 'montserratbold' Arial , sans-serif
+        font-weight: 700
+        letter-spacing: 0.6px
+        text-align: center
+
+    .question
+        margin: 11px 0 0 241px
+        display: inline-block
+        width: 276px
+        height: 18px
+        color: #333
+        font: 18px 'robotolight', Arial, sans-serif
+        font-weight: 300
+        letter-spacing: -0.3px
+        text-align: center
+
+    .searching
+        margin: 38px 0 0 178px
+        display: inline-block
+        width: 238px
+        height: 36px
+        background-color: white
+        border: 1px solid #ccc
+        +border-radius(4px)
+        box-shadow: 0 1px 0 #eee
+
+    .search_button
+        margin: 10px 0 0 6px
+        width: 158px
+        height: 40px
+        background-color: #ff4e50
+        +border-radius(20px)
+        border: 1px solid #ff4e50
+        color: white
+        cursor: pointer
+        font: 14px 'montserratbold' Arial , sans-serif
+        font-weight: 700
+
++desktop
+    .content
+        margin: 0 auto
+        padding-top: 95px
+        width: 960px
+
+        &__title
+            display: block
+            color: #333333
+            font: 22px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+            text-align: center
+
+    .jcarousel__wrapper
+        margin: 0 auto
+        position: relative
+        display: inline-block
+        width: 960px
+        height: 442px
+
+    .jcarousel__box--first,
+    .jcarousel__box--second,
+    .jcarousel__box--third
+        margin-left: 2px
+        position: relative
+        display: inline-block
+        width: 315px
+        overflow: hidden
+
+    .jcarousel__box--first ul,
+    .jcarousel__box--second ul,
+    .jcarousel__box--third ul
+        width: 20000px
+        height: 435px
+        position: relative
+        list-style: none
+        padding: 0
+
+    .jcarousel__item
+        margin: 33px 0 0 9px
+        float: left
+        width: 300px
+        height: 400px
+
+    .jcarousel__item--first
+        .jcarousel__link
+            display: block
+            width: 300px
+            height: 400px
+            background: url(../image/dstep1.png) 0 0 no-repeat
+            text-decoration: none
+
+            .jcarousel__button
+                margin: 231px 0 0 26px
+                display: inline-block
+                width: 70px
+                height: 20px
+                background-color: #ff4e50
+                +border-radius(10px)
+                border: 1px solid #ff4e50
+
+            .step
+                display: inline-block
+                width: 42px
+                height: 8px
+                color: white
+                font: 10px 'montserratbold' Arial , sans-serif
+                text-transform: uppercase
+
+            .jcarousel__title
+                margin: 17px 0 0 24px
+                display: block
+                width: 170px
+                height: 49px
+                color: white
+                font: 24px 'montserratbold' Arial , sans-serif
+                font-weight: 700
+                letter-spacing: 1.1px
+
+            .jcarousel__text
+                margin: 20px 0 0 23px
+                display: block
+                width: 264px
+                height: 53px
+                color: #ccc
+                font: 14px 'robotolight', Arial, sans-serif
+                font-weight: 300
+
+    .jcarousel-control-prev,
+    .jcarousel-control-next
+        position: absolute
+        top: 187px
+
+    .jcarousel-control-prev
+        left: 34px
+
+    .jcarousel-control-next
+        right: 21px
+
+    .jcarousel-control-prev:hover span,
+    .jcarousel-control-next:hover span
+        display: block
+
+    .jcarousel__item--second
+        .jcarousel__link
+            display: block
+            width: 300px
+            height: 400px
+            background: url(../image/dstep2.png) 0 0 no-repeat
+            text-decoration: none
+
+            .jcarousel__button
+                margin: 261px 0 0 27px
+                display: inline-block
+                width: 70px
+                height: 20px
+                background-color: #ff4e50
+                +border-radius(10px)
+                border: 1px solid #ff4e50
+
+            .step
+                display: inline-block
+                width: 42px
+                height: 8px
+                color: white
+                font: 10px 'montserratbold' Arial , sans-serif
+                text-transform: uppercase
+
+            .jcarousel__title
+                margin: 17px 0 0 25px
+                display: block
+                width: 204px
+                height: 49px
+                color: white
+                font: 24px 'montserratbold' Arial , sans-serif
+                font-weight: 700
+                letter-spacing: 0.5px
+
+            .jcarousel__text
+                margin: -11px 0 0 26px
+                display: block
+                width: 254px
+                height: 53px
+                color: #ccc
+                font: 14px 'robotolight', Arial, sans-serif
+                font-weight: 300
+
+    .jcarousel__item--third
+        .jcarousel__link
+            display: block
+            width: 300px
+            height: 400px
+            background: url(../image/dstep3.png) 0 0 no-repeat
+            text-decoration: none
+
+            .jcarousel__button
+                margin: 231px 0 0 23px
+                display: inline-block
+                width: 70px
+                height: 20px
+                background-color: #ff4e50
+                +border-radius(10px)
+                border: 1px solid #ff4e50
+
+            .step
+                display: inline-block
+                width: 42px
+                height: 8px
+                color: white
+                font: 10px 'montserratbold' Arial , sans-serif
+                text-transform: uppercase
+
+            .jcarousel__title
+                margin: 17px 0 0 22px
+                display: block
+                width: 170px
+                height: 49px
+                color: white
+                font: 24px 'montserratbold' Arial , sans-serif
+                font-weight: 700
+                letter-spacing: 1.1px
+
+            .jcarousel__text
+                margin: 20px 0 0 22px
+                display: block
+                width: 263px
+                height: 53px
+                color: #ccc
+                font: 14px 'robotolight', Arial, sans-serif
+                font-weight: 300
+
+    .content__partner
+        margin-top: 35px
+        height: 346px
+
+        .text
+            margin: 0 auto
+            padding: 55px 0 0 16px
+            display: block
+            width: 414px
+            height: 50px
+            color: #333333
+            font: 22px 'montserratbold' Arial , sans-serif
+            font-weight: 700
+            letter-spacing: 0.7px
+            text-align: center
+
+        .item
+            display: inline-block
+            height: 214px
+
+            & .photo
+                margin: 0 auto
+                margin-top: 0
+                display: block
+                +border-radius(100%)
+                transition: all 0.7s ease
+
+            & .photo:hover
+                box-shadow: 0px 28px 16px -26px black
+                transform: scale(1.1)
+
+            & .hobby
+                margin: -35px 0 0 183px
+                display: block
+                +sprite($first-red)
+                opacity: 1
+                position: absolute
+                transition: all 0.9s ease
+                z-index: 20
+
+            & .hobby:hover
+                +border-radius(50%)
+                box-shadow: 0px 0px 15px 15px #fff
+                transform: rotate(720deg)
+
+            & .name
+                display: block
+                width: 106px
+                height: 14px
+                color: #333
+                font: 14px 'montserratbold' Arial , sans-serif
+                font-weight: 700
+                letter-spacing: 0.4px
+
+            & .info
+                display: block
+                width: 240px
+                height: 29px
+                color: #666
+                font: 14px 'robotolight', Arial, sans-serif
+                font-weight: 300
+                text-align: center
+
+        .item__first
+            margin-top: 7px
+            display: block
+            width: 257px
+            height: 204px
+
+            .photo
+                +sprite($first)
+
+            .hobby
+                margin: -37px 0 0 151px
+                display: block
+                +sprite($first-red)
+                opacity: 1
+                position: absolute
+                transition: all 0.9s ease
+                z-index: 20
+
+            .hobby:hover
+                +border-radius(50%)
+                box-shadow: 0px 0px 15px 15px #fff
+                transform: rotate(720deg)
+
+            .name
+                margin: 18px 0 0 75px
+
+            .info
+                margin: 16px 0 0 7px
+
+        .item__second
+            position: absolute
+            top: 1410px
+            left: 710px
+            width: 257px
+            height: 233px
+
+            .photo
+                +sprite($second)
+
+            .hobby
+                margin: -35px 0 0 154px
+                display: block
+                +sprite($second-yellow)
+                opacity: 1
+                position: absolute
+                transition: all 0.9s ease
+                z-index: 20
+
+            .hobby:hover
+                +border-radius(50%)
+                box-shadow: 0px 0px 15px 15px #fff
+                transform: rotate(720deg)
+
+            .name
+                margin: 19px 0 0 79px
+
+            .info
+                margin: 16px 0 0 19px
+                display: block
+                width: 220px
+                height: 66px
+
+        .item__third
+            position: absolute
+            top: 1408px
+            left: 473px
+            width: 257px
+            height: 204px
+
+            .photo
+                +sprite($third)
+
+            .hobby
+                margin: -35px 0 0 151px
+                display: block
+                +sprite($third-green)
+                opacity: 1
+                position: absolute
+                transition: all 0.9s ease
+                z-index: 20
+
+            .hobby:hover
+                +border-radius(50%)
+                box-shadow: 0px 0px 15px 15px #fff
+                transform: rotate(720deg)
+
+            .name
+                margin: 19px 0 0 74px
+                display: block
+                width: 110px
+
+            .info
+                margin: 16px 0 0 18px
+                display: block
+                width: 215px
+
+        .item__fourth
+            position: absolute
+            top: 1409px
+            right: 215px
+            width: 257px
+            height: 204px
+
+            .photo
+                +sprite($fourth)
+
+            .hobby
+                margin: -35px 0 0 151px
+                display: block
+                +sprite($fourth-blue)
+                opacity: 1
+                position: absolute
+                transition: all 0.9s ease
+                z-index: 20
+
+            .hobby:hover
+                +border-radius(50%)
+                box-shadow: 0px 0px 15px 15px #fff
+                transform: rotate(720deg)
+
+            .name
+                margin: 18px 0 0 73px
+
+            .info
+                margin: 16px 0 0 6px
+
+    .partner__link
+        margin: 0 0 0 0
+        display: block
+        height: 80px
+
+        .link
+            margin: 38px 0 0 391px
+            display: inline-block
+            width: 189px
+            height: 37px
+            background-color: white
+            border: 2px solid #ff4e50
+            +border-radius(20px)
+
+        .link:hover
+            background-color: #ff4e50
+            border: 2px solid white
+
+        .text
+            margin: 12px 0 0 28px
+            display: inline-block
+            width: 135px
+            height: 14px
+            color: #ff4e50
+            font: 14px 'robotolight', Arial, sans-serif
+            font-weight: 700
+            letter-spacing: 0.46px
+            text-decoration: none
+
+        .text:hover
+            color: white
+
+    .partner__search
+        margin: 0 auto
+        display: block
+        height: 1390px
+
+    .first
+        margin-top: 95px
+        margin-left: 316px
+        display: inline-block
+        width: 339px
+        height: 44px
+        color: #333
+        font: 22px 'montserratbold' Arial , sans-serif
+        font-weight: 700
+        letter-spacing: 0.6px
+        text-align: center
+
+    .grid
+        display: block
+        height: 988px !important
+
+        &-item
+            margin: 15px 4px 6px 10px
+            position: relative
+            display: block
+            float: left
+            width: 31.5%
+            height: 310px
+            text-decoration: none
+            transition: all 0.7s ease
+
+        &-item:hover
+            box-shadow: 0px 28px 16px -26px black
+            transform: scale(1.1)
+
+        &-item:nth-child(5),
+        &-item:nth-child(6)
+            position: relative
+            display: block
+            float: left
+            width: 64%
+            height: 310px
+
+        &-title
+            margin: 0 auto
+            padding-top: 141px
+            display: block
+            color: white
+            font: 22px 'montserratbold' Arial , sans-serif
+            text-align: center
+
+        &-error
+            color: red
+            font: 14px 'montserratbold' Arial , sans-serif
+            text-align: center
+
+    .second
+        margin: 94px 0 0 316px
+        display: block
+        width: 339px
+        height: 44px
+        color: #333
+        font: 22px 'montserratbold' Arial , sans-serif
+        font-weight: 700
+        letter-spacing: 0.6px
+        text-align: center
+
+    .question
+        margin: 16px 0 0 345px
+        display: block
+        width: 276px
+        height: 18px
+        color: #333
+        font: 18px 'robotolight', Arial, sans-serif
+        font-weight: 300
+        letter-spacing: -0.3px
+        text-align: center
+
+    .searching
+        margin: 38px 0 0 280px
+        display: inline-block
+        width: 238px
+        height: 36px
+        background-color: white
+        border: 1px solid #ccc
+        +border-radius(4px)
+        box-shadow: 0 1px 0 #eee
+
+    .search_button
+        margin: 10px 0 0 6px
+        width: 158px
+        height: 40px
+        background-color: #ff4e50
+        +border-radius(20px)
+        border: 1px solid #ff4e50
+        color: white
+        cursor: pointer
+        font: 14px 'montserratbold' Arial , sans-serif
+        font-weight: 700

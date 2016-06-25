@@ -1,0 +1,139 @@
+
+$first-name: 'first'
+$first-x: 324px
+$first-y: 0px
+$first-offset-x: -324px
+$first-offset-y: 0px
+$first-width: 121px
+$first-height: 121px
+$first-total-width: 838px
+$first-total-height: 121px
+$first-image: 'sprite.png'
+$first: (324px, 0px, -324px, 0px, 121px, 121px, 838px, 121px, 'sprite.png', 'first', )
+$first-red-name: 'first_red'
+$first-red-x: 0px
+$first-red-y: 0px
+$first-red-offset-x: 0px
+$first-red-offset-y: 0px
+$first-red-width: 41px
+$first-red-height: 41px
+$first-red-total-width: 838px
+$first-red-total-height: 121px
+$first-red-image: 'sprite.png'
+$first-red: (0px, 0px, 0px, 0px, 41px, 41px, 838px, 121px, 'sprite.png', 'first_red', )
+$five-name: 'five'
+$five-x: 204px
+$five-y: 0px
+$five-offset-x: -204px
+$five-offset-y: 0px
+$five-width: 110px
+$five-height: 24px
+$five-total-width: 838px
+$five-total-height: 121px
+$five-image: 'sprite.png'
+$five: (204px, 0px, -204px, 0px, 110px, 24px, 838px, 121px, 'sprite.png', 'five', )
+$fourth-name: 'fourth'
+$fourth-x: 455px
+$fourth-y: 0px
+$fourth-offset-x: -455px
+$fourth-offset-y: 0px
+$fourth-width: 121px
+$fourth-height: 121px
+$fourth-total-width: 838px
+$fourth-total-height: 121px
+$fourth-image: 'sprite.png'
+$fourth: (455px, 0px, -455px, 0px, 121px, 121px, 838px, 121px, 'sprite.png', 'fourth', )
+$fourth-blue-name: 'fourth_blue'
+$fourth-blue-x: 51px
+$fourth-blue-y: 0px
+$fourth-blue-offset-x: -51px
+$fourth-blue-offset-y: 0px
+$fourth-blue-width: 41px
+$fourth-blue-height: 41px
+$fourth-blue-total-width: 838px
+$fourth-blue-total-height: 121px
+$fourth-blue-image: 'sprite.png'
+$fourth-blue: (51px, 0px, -51px, 0px, 41px, 41px, 838px, 121px, 'sprite.png', 'fourth_blue', )
+$second-name: 'second'
+$second-x: 586px
+$second-y: 0px
+$second-offset-x: -586px
+$second-offset-y: 0px
+$second-width: 121px
+$second-height: 120px
+$second-total-width: 838px
+$second-total-height: 121px
+$second-image: 'sprite.png'
+$second: (586px, 0px, -586px, 0px, 121px, 120px, 838px, 121px, 'sprite.png', 'second', )
+$second-yellow-name: 'second_yellow'
+$second-yellow-x: 102px
+$second-yellow-y: 0px
+$second-yellow-offset-x: -102px
+$second-yellow-offset-y: 0px
+$second-yellow-width: 41px
+$second-yellow-height: 40px
+$second-yellow-total-width: 838px
+$second-yellow-total-height: 121px
+$second-yellow-image: 'sprite.png'
+$second-yellow: (102px, 0px, -102px, 0px, 41px, 40px, 838px, 121px, 'sprite.png', 'second_yellow', )
+$third-name: 'third'
+$third-x: 717px
+$third-y: 0px
+$third-offset-x: -717px
+$third-offset-y: 0px
+$third-width: 121px
+$third-height: 121px
+$third-total-width: 838px
+$third-total-height: 121px
+$third-image: 'sprite.png'
+$third: (717px, 0px, -717px, 0px, 121px, 121px, 838px, 121px, 'sprite.png', 'third', )
+$third-green-name: 'third_green'
+$third-green-x: 153px
+$third-green-y: 0px
+$third-green-offset-x: -153px
+$third-green-offset-y: 0px
+$third-green-width: 41px
+$third-green-height: 41px
+$third-green-total-width: 838px
+$third-green-total-height: 121px
+$third-green-image: 'sprite.png'
+$third-green: (153px, 0px, -153px, 0px, 41px, 41px, 838px, 121px, 'sprite.png', 'third_green', )
+$spritesheet-width: 838px
+$spritesheet-height: 121px
+$spritesheet-image: 'sprite.png'
+$spritesheet-sprites: ($first, $first-red, $five, $fourth, $fourth-blue, $second, $second-yellow, $third, $third-green, )
+$spritesheet: (838px, 121px, 'sprite.png', $spritesheet-sprites, )
+
+
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(../image/#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)
