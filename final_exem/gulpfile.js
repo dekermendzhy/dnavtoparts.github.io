@@ -10,11 +10,24 @@ const rename = require('gulp-rename');
 const spritesmith = require('gulp.spritesmith');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
+const prefixer = require('gulp-autoprefixer');
+const uglify = require('gulp-uglify');
+
+
+gulp.task('uglify', function() {
+  return gulp.src('src/js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('build/js'));
+});
 
 gulp.task('sass', function (){
     return gulp.src('src/main.sass')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(prefixer({
+            browsers: ['last 50 versions'],
+            cascade: true
+        }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('src'));
 });
